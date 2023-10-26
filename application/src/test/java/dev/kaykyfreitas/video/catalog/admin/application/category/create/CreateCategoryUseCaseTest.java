@@ -1,8 +1,8 @@
 package dev.kaykyfreitas.video.catalog.admin.application.category.create;
 
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryGateway;
-import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.DomainException;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -26,6 +26,12 @@ public class CreateCategoryUseCaseTest {
 
     @Mock
     private CategoryGateway categoryGateway;
+
+
+    @BeforeEach
+    void cleanUp() {
+        Mockito.reset(categoryGateway);
+    }
 
 
     @Test
