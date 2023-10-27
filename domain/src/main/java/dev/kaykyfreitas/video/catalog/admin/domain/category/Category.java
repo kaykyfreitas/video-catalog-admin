@@ -27,8 +27,8 @@ public class Category extends AggregateRoot<CategoryId> implements Cloneable {
         this.name = aName;
         this.description = aDescription;
         this.active = isActive;
-        this.createdAt = aCreationDate;
-        this.updatedAt = aUpdateDate;
+        this.createdAt = Objects.requireNonNull(aCreationDate, "'createdAt' should not be null");
+        this.updatedAt = Objects.requireNonNull(aUpdateDate, "'updatedAt' should not be null");
         this.deletedAt = aDeleteDate;
     }
 
@@ -40,7 +40,7 @@ public class Category extends AggregateRoot<CategoryId> implements Cloneable {
     }
 
     public static  Category with(final Category aCategory) {
-        return new Category(
+        return with(
                 aCategory.id,
                 aCategory.name,
                 aCategory.description,
@@ -48,6 +48,26 @@ public class Category extends AggregateRoot<CategoryId> implements Cloneable {
                 aCategory.createdAt,
                 aCategory.updatedAt,
                 aCategory.deletedAt
+        );
+    }
+
+    public static Category with(
+            final CategoryId anId,
+            final String name,
+            final String description,
+            final boolean active,
+            final Instant createdAt,
+            final Instant updatedAt,
+            final Instant deletedAt
+    ) {
+        return new Category(
+                anId,
+                name,
+                description,
+                active,
+                createdAt,
+                updatedAt,
+                deletedAt
         );
     }
 
