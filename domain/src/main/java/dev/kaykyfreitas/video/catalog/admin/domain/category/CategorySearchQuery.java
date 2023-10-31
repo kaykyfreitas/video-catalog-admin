@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.domain.category;
 
 public record CategorySearchQuery(
-        int ṕage,
+        int page,
         int perPage,
         String terms,
         String sort,

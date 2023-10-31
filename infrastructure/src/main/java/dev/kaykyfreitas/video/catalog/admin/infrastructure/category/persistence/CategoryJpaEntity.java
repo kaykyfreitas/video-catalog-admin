@@ -58,7 +58,7 @@ public class CategoryJpaEntity {
         );
     }
 
-    public Category toAggreagate() {
+    public Category toAggregate() {
         return Category.with(
                 CategoryId.from(getId()),
                 getName(),
