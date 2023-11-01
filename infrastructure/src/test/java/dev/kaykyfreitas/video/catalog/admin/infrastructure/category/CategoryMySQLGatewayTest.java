@@ -3,7 +3,7 @@ package dev.kaykyfreitas.video.catalog.admin.infrastructure.category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategorySearchQuery;
-import dev.kaykyfreitas.video.catalog.admin.infrastructure.MySQLGatewayTest;
+import dev.kaykyfreitas.video.catalog.admin.MySQLGatewayTest;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryJpaEntity;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryRepository;
 import org.junit.jupiter.api.Assertions;

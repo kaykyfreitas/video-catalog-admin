@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence;
 
 import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
-import dev.kaykyfreitas.video.catalog.admin.infrastructure.MySQLGatewayTest;
+import dev.kaykyfreitas.video.catalog.admin.MySQLGatewayTest;
 import org.hibernate.PropertyValueException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
