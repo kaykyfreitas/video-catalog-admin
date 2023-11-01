@@ -5,6 +5,7 @@ import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
 import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.DomainException;
+import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotFoundException;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryJpaEntity;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryRepository;
 import org.junit.jupiter.api.Assertions;
@@ -58,7 +59,7 @@ public class UpdateCategoryUseCaseIT {
         Assertions.assertNotNull(actualOutput);
         Assertions.assertNotNull(actualOutput.id());
 
-        final var actualCategory = categoryRepository.findById(actualOutput.id().getValue()).get();
+        final var actualCategory = categoryRepository.findById(actualOutput.id()).get();
 
         Assertions.assertEquals(expectedName, actualCategory.getName());
         Assertions.assertEquals(expectedDescription, actualCategory.getDescription());
@@ -175,7 +176,7 @@ public class UpdateCategoryUseCaseIT {
         final var expectedDescription = "A categoria mais assistida";
         final var expectedIsActive = false;
         final var expectedId = "123";
-        final var expectedErrorCount = 1;
+        final var expectedErrorCount = 0;
         final var expectedErrorMessage = "category with id 123 was not found";
 
         final var aCommand = UpdateCategoryCommand.with(
@@ -185,9 +186,9 @@ public class UpdateCategoryUseCaseIT {
                 expectedIsActive
         );
 
-        final var actualException = Assertions.assertThrows(DomainException.class, () -> useCase.execute(aCommand));
+        final var actualException = Assertions.assertThrows(NotFoundException.class, () -> useCase.execute(aCommand));
 
-        Assertions.assertEquals(expectedErrorMessage, actualException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorMessage, actualException.getMessage());
         Assertions.assertEquals(expectedErrorCount, actualException.getErrors().size());
     }
 

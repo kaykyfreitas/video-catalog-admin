@@ -5,8 +5,8 @@ import dev.kaykyfreitas.video.catalog.admin.domain.validation.Error;
 import java.util.List;
 
 public class DomainException extends NoStacktraceException {
-    private final List<Error> errors;
-    private DomainException(final String aMessage, final List<Error> someErrors) {
+    protected final List<Error> errors;
+    protected DomainException(final String aMessage, final List<Error> someErrors) {
         super(aMessage);
         this.errors = someErrors;
     }

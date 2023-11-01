@@ -5,6 +5,7 @@ import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
 import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.DomainException;
+import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotFoundException;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryJpaEntity;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryRepository;
 import org.junit.jupiter.api.Assertions;
@@ -60,7 +61,7 @@ public class GetCategoryByIdUseCaseIT {
         final var expectedId = CategoryId.from("123");
 
         final var actualException = Assertions.assertThrows(
-                DomainException.class,
+                NotFoundException.class,
                 () -> useCase.execute(expectedId.getValue())
         );
 

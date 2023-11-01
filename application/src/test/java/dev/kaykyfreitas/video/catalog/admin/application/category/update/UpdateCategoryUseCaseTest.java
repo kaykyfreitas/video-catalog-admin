@@ -4,6 +4,7 @@ import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
 import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.DomainException;
+import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotFoundException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -189,7 +190,7 @@ public class UpdateCategoryUseCaseTest {
         final var expectedDescription = "A categoria mais assistida";
         final var expectedIsActive = false;
         final var expectedId = "123";
-        final var expectedErrorCount = 1;
+        final var expectedErrorCount = 0;
         final var expectedErrorMessage = "category with id 123 was not found";
 
         final var aCommand = UpdateCategoryCommand.with(
@@ -202,9 +203,9 @@ public class UpdateCategoryUseCaseTest {
         when(categoryGateway.findById(eq(CategoryId.from(expectedId))))
                 .thenReturn(Optional.empty());
 
-        final var actualException = Assertions.assertThrows(DomainException.class, () -> useCase.execute(aCommand));
+        final var actualException = Assertions.assertThrows(NotFoundException.class, () -> useCase.execute(aCommand));
 
-        Assertions.assertEquals(expectedErrorMessage, actualException.getErrors().get(0).message());
+        Assertions.assertEquals(expectedErrorMessage, actualException.getMessage());
         Assertions.assertEquals(expectedErrorCount, actualException.getErrors().size());
 
         Mockito.verify(categoryGateway, times(1)).findById(eq(CategoryId.from(expectedId)));

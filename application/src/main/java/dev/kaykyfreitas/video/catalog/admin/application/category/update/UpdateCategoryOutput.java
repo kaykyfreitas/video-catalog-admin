@@ -4,9 +4,13 @@ import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
 
 public record UpdateCategoryOutput(
-        CategoryId id
+        String id
 ) {
+    public static UpdateCategoryOutput from(final String anId) {
+        return new UpdateCategoryOutput(anId);
+    }
+
     public static UpdateCategoryOutput from(final Category aCategory) {
-        return new UpdateCategoryOutput(aCategory.getId());
+        return new UpdateCategoryOutput(aCategory.getId().getValue());
     }
 }

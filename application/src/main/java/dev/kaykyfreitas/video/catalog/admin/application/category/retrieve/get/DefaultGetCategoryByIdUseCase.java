@@ -1,8 +1,10 @@
 package dev.kaykyfreitas.video.catalog.admin.application.category.retrieve.get;
 
+import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
 import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.DomainException;
+import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotFoundException;
 import dev.kaykyfreitas.video.catalog.admin.domain.validation.Error;
 
 import java.util.Objects;
@@ -24,9 +26,7 @@ public class DefaultGetCategoryByIdUseCase extends GetCategoryByIdUseCase {
                 .orElseThrow(notFound(aCategoryId));
     }
 
-    private Supplier<DomainException> notFound(final CategoryId anId) {
-        return () -> DomainException.with(
-                new Error("category with id %s was not found".formatted(anId.getValue()))
-        );
+    private Supplier<NotFoundException> notFound(final CategoryId anId) {
+        return () -> NotFoundException.with(Category.class, anId);
     }
 }
