@@ -13,9 +13,10 @@ import dev.kaykyfreitas.video.catalog.admin.domain.category.CategorySearchQuery;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
 import dev.kaykyfreitas.video.catalog.admin.domain.validation.handler.Notification;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.api.CategoryAPI;
-import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.CategoryApiOutput;
-import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.CreateCategoryApiInput;
-import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.UpdateCategoryApiInput;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.CategoryListResponse;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.CategoryResponse;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.CreateCategoryRequest;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.UpdateCategoryRequest;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.presenter.CategoryApiPresenter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
@@ -48,7 +49,7 @@ public class CategoryController implements CategoryAPI {
     }
 
     @Override
-    public ResponseEntity<?> createCategory(final CreateCategoryApiInput input) {
+    public ResponseEntity<?> createCategory(final CreateCategoryRequest input) {
         final var aCommand = CreateCategoryCommand.with(
                 input.name(),
                 input.description(),
@@ -65,7 +66,7 @@ public class CategoryController implements CategoryAPI {
     }
 
     @Override
-    public Pagination<?> createCategory(
+    public Pagination<CategoryListResponse> createCategory(
             final String search,
             final int page,
             final int perPage,
@@ -73,16 +74,17 @@ public class CategoryController implements CategoryAPI {
             final String direction
     ) {
         return listCategoriesUseCase
-                .execute(new CategorySearchQuery(page, perPage, search, sort, direction));
+                .execute(new CategorySearchQuery(page, perPage, search, sort, direction))
+                .map(CategoryApiPresenter::present);
     }
 
     @Override
-    public CategoryApiOutput getById(final String anId) {
+    public CategoryResponse getById(final String anId) {
         return CategoryApiPresenter.present(this.getCategoryByIdUseCase.execute(anId));
     }
 
     @Override
-    public ResponseEntity<?> updateById(final String anId, final UpdateCategoryApiInput input) {
+    public ResponseEntity<?> updateById(final String anId, final UpdateCategoryRequest input) {
         final var aCommand = UpdateCategoryCommand.with(
                 anId,
                 input.name(),

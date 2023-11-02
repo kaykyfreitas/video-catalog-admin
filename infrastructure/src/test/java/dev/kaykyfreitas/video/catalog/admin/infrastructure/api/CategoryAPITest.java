@@ -18,9 +18,8 @@ import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotFoundException;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
 import dev.kaykyfreitas.video.catalog.admin.domain.validation.Error;
 import dev.kaykyfreitas.video.catalog.admin.domain.validation.handler.Notification;
-import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.CreateCategoryApiInput;
-import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.UpdateCategoryApiInput;
-import io.vavr.API;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.CreateCategoryRequest;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.UpdateCategoryRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -70,7 +69,7 @@ public class CategoryAPITest {
         final var expectedDescription = "A categoria mais assistida";
         final var expectedIsActive = true;
 
-        final var anInput = new CreateCategoryApiInput(expectedName, expectedDescription, expectedIsActive);
+        final var anInput = new CreateCategoryRequest(expectedName, expectedDescription, expectedIsActive);
 
         when(createCategoryUseCase.execute(any()))
                 .thenReturn(Right(CreateCategoryOutput.from("123")));
@@ -105,7 +104,7 @@ public class CategoryAPITest {
         final var expectedIsActive = true;
         final var expectedMessage = "'name' should not be null";
 
-        final var anInput = new CreateCategoryApiInput(expectedName, expectedDescription, expectedIsActive);
+        final var anInput = new CreateCategoryRequest(expectedName, expectedDescription, expectedIsActive);
 
         when(createCategoryUseCase.execute(any()))
                 .thenReturn(Left(Notification.create(new Error(expectedMessage))));
@@ -141,7 +140,7 @@ public class CategoryAPITest {
         final var expectedIsActive = true;
         final var expectedMessage = "'name' should not be null";
 
-        final var anInput = new CreateCategoryApiInput(expectedName, expectedDescription, expectedIsActive);
+        final var anInput = new CreateCategoryRequest(expectedName, expectedDescription, expectedIsActive);
 
         when(createCategoryUseCase.execute(any()))
                 .thenThrow(DomainException.with(new Error(expectedMessage)));
@@ -240,7 +239,7 @@ public class CategoryAPITest {
         when(updateCategoryUseCase.execute(any()))
                 .thenReturn(Right(UpdateCategoryOutput.from(expectedId)));
 
-        final var aCommand = new UpdateCategoryApiInput(expectedName, expectedDescription, expectedIsActive);
+        final var aCommand = new UpdateCategoryRequest(expectedName, expectedDescription, expectedIsActive);
 
         // when
         final var request = MockMvcRequestBuilders.put("/categories/{id}", expectedId)
@@ -276,7 +275,7 @@ public class CategoryAPITest {
         when(updateCategoryUseCase.execute(any()))
                 .thenThrow(NotFoundException.with(Category.class, CategoryId.from(expectedId)));
 
-        final var aCommand = new UpdateCategoryApiInput(expectedName, expectedDescription, expectedIsActive);
+        final var aCommand = new UpdateCategoryRequest(expectedName, expectedDescription, expectedIsActive);
 
         // when
         final var request = MockMvcRequestBuilders.put("/categories/{id}", expectedId)
@@ -313,7 +312,7 @@ public class CategoryAPITest {
         when(updateCategoryUseCase.execute(any()))
                 .thenReturn(Left(Notification.create(new Error(expectedErrorMessage))));
 
-        final var aCommand = new UpdateCategoryApiInput(expectedName, expectedDescription, expectedIsActive);
+        final var aCommand = new UpdateCategoryRequest(expectedName, expectedDescription, expectedIsActive);
 
         // when
         final var request = MockMvcRequestBuilders.put("/categories/{id}", expectedId)
