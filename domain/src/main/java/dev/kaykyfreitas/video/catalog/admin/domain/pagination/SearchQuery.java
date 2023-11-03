@@ -1,6 +1,6 @@
-package dev.kaykyfreitas.video.catalog.admin.domain.category;
+package dev.kaykyfreitas.video.catalog.admin.domain.pagination;
 
-public record CategorySearchQuery(
+public record SearchQuery(
         int page,
         int perPage,
         String terms,

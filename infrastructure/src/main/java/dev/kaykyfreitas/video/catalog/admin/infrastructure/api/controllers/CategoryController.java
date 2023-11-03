@@ -9,7 +9,7 @@ import dev.kaykyfreitas.video.catalog.admin.application.category.retrieve.list.L
 import dev.kaykyfreitas.video.catalog.admin.application.category.update.UpdateCategoryCommand;
 import dev.kaykyfreitas.video.catalog.admin.application.category.update.UpdateCategoryOutput;
 import dev.kaykyfreitas.video.catalog.admin.application.category.update.UpdateCategoryUseCase;
-import dev.kaykyfreitas.video.catalog.admin.domain.category.CategorySearchQuery;
+import dev.kaykyfreitas.video.catalog.admin.domain.pagination.SearchQuery;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
 import dev.kaykyfreitas.video.catalog.admin.domain.validation.handler.Notification;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.api.CategoryAPI;
@@ -74,7 +74,7 @@ public class CategoryController implements CategoryAPI {
             final String direction
     ) {
         return listCategoriesUseCase
-                .execute(new CategorySearchQuery(page, perPage, search, sort, direction))
+                .execute(new SearchQuery(page, perPage, search, sort, direction))
                 .map(CategoryApiPresenter::present);
     }
 

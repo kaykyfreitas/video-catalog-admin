@@ -3,7 +3,7 @@ package dev.kaykyfreitas.video.catalog.admin.infrastructure.category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
-import dev.kaykyfreitas.video.catalog.admin.domain.category.CategorySearchQuery;
+import dev.kaykyfreitas.video.catalog.admin.domain.pagination.SearchQuery;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryJpaEntity;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryRepository;
@@ -50,7 +50,7 @@ public class CategoryMySQLGateway implements CategoryGateway {
     }
 
     @Override
-    public Pagination<Category> findAll(final CategorySearchQuery aQuery) {
+    public Pagination<Category> findAll(final SearchQuery aQuery) {
         final var page = PageRequest.of(
                 aQuery.page(),
                 aQuery.perPage(),
