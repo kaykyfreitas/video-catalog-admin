@@ -33,7 +33,7 @@ public class DefaultUpdateGenreUseCase extends UpdateGenreUseCase {
     }
 
     @Override
-    public UpdateGenreOutput execute(UpdateGenreCommand aCommand) {
+    public UpdateGenreOutput execute(final UpdateGenreCommand aCommand) {
         final var anId = GenreId.from(aCommand.id());
         final var aName = aCommand.name();
         final var isActive = aCommand.isActive();
@@ -54,7 +54,7 @@ public class DefaultUpdateGenreUseCase extends UpdateGenreUseCase {
         return UpdateGenreOutput.from(this.genreGateway.update(aGenre));
     }
 
-    private ValidationHandler validateCategories(List<CategoryId> ids) {
+    private ValidationHandler validateCategories(final List<CategoryId> ids) {
         final var notification = Notification.create();
         if (ids == null || ids.isEmpty()) {
             return notification;
