@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/genre/retrieve/list/DefaultListGenreUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/genre/retrieve/list/GenreListOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/genre/retrieve/list/ListGenreUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/genre/retrieve/list/ListGenreUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreCategoryId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreCategoryJpaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreJpaEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/U2_Create_Genre_Aggregate.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V2__Create_Genre_Aggregate.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGatewayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLCleanUpExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLCleanUpExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLGatewayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +42,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="video-catalog-admin" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -46,14 +57,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -67,8 +81,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.GenreMySQLGatewayTest.executor": "Run",
+    "Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
+    "Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
+    "Gradle.GenreMySQLGatewayTest.testDependenciesInjected.executor": "Run",
     "Gradle.ListGenreUseCaseTest.executor": "Run",
     "Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre.executor": "Run",
+    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'.executor": "Run",
+    "Gradle.Tests in 'video-catalog-admin.infrastructure.test'.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -82,10 +102,15 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.ListGenreUseCaseTest">
-    <configuration name="CategoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.GenreMySQLGatewayTest">
+    <configuration name="GenreMySQLGatewayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -96,9 +121,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":domain:test" />
+            <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.GenreMySQLGatewayTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -109,7 +134,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CategoryTest.givenAValidCategory_whenCallUpdateToInactive_thenReturnCategoryUpdated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -120,9 +145,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":domain:test" />
+            <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryTest.givenAValidCategory_whenCallUpdateToInactive_thenReturnCategoryUpdated&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -133,7 +158,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CategoryTest.givenAValidCategory_whenCallUpdateWithInvalidParams_thenReturnCategoryUpdated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,9 +169,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":domain:test" />
+            <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryTest.givenAValidCategory_whenCallUpdateWithInvalidParams_thenReturnCategoryUpdated&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +182,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ListGenreUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -168,9 +193,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":application:test" />
+            <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.genre.retrieve.list.ListGenreUseCaseTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,7 +206,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'video-catalog-admin.infrastructure.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -192,9 +217,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":application:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.genre.retrieve.list.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre&quot;" />
+            <option value=":infrastructure:test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ListGenreUseCaseTest" />
-        <item itemvalue="Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre" />
-        <item itemvalue="Gradle.CategoryTest" />
-        <item itemvalue="Gradle.CategoryTest.givenAValidCategory_whenCallUpdateWithInvalidParams_thenReturnCategoryUpdated" />
-        <item itemvalue="Gradle.CategoryTest.givenAValidCategory_whenCallUpdateToInactive_thenReturnCategoryUpdated" />
+        <item itemvalue="Gradle.GenreMySQLGatewayTest" />
+        <item itemvalue="Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre" />
+        <item itemvalue="Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre" />
+        <item itemvalue="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'" />
+        <item itemvalue="Gradle.Tests in 'video-catalog-admin.infrastructure.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +267,7 @@
       <workItem from="1703120518047" duration="1762000" />
       <workItem from="1703720961783" duration="4000" />
       <workItem from="1705615240793" duration="564000" />
-      <workItem from="1706045552505" duration="1309000" />
+      <workItem from="1706045552505" duration="7906000" />
     </task>
     <servers />
   </component>
