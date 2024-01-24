@@ -73,8 +73,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.GenreMySQLGatewayTest.executor": "Run",
+    "Gradle.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
+    "Gradle.GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.testDependenciesInjected.executor": "Run",
     "Gradle.ListGenreUseCaseTest.executor": "Run",
     "Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre.executor": "Run",
@@ -115,6 +117,30 @@
             <option value=":infrastructure:test" />
             <option value="--tests" />
             <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.GenreMySQLGatewayTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -173,7 +199,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -186,29 +212,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.*&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'video-catalog-admin.infrastructure.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":infrastructure:test" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,10 +233,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.GenreMySQLGatewayTest" />
+        <item itemvalue="Gradle.GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk" />
+        <item itemvalue="Gradle.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre" />
         <item itemvalue="Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre" />
         <item itemvalue="Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre" />
-        <item itemvalue="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'" />
-        <item itemvalue="Gradle.Tests in 'video-catalog-admin.infrastructure.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +262,7 @@
       <workItem from="1703120518047" duration="1762000" />
       <workItem from="1703720961783" duration="4000" />
       <workItem from="1705615240793" duration="564000" />
-      <workItem from="1706045552505" duration="9870000" />
+      <workItem from="1706045552505" duration="10728000" />
     </task>
     <servers />
   </component>
