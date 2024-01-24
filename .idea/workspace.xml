@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreCategoryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreCategoryJpaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreJpaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/U2_Create_Genre_Aggregate.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V2__Create_Genre_Aggregate.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGatewayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLCleanUpExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLCleanUpExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGatewayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +258,7 @@
       <workItem from="1703120518047" duration="1762000" />
       <workItem from="1703720961783" duration="4000" />
       <workItem from="1705615240793" duration="564000" />
-      <workItem from="1706045552505" duration="7906000" />
+      <workItem from="1706045552505" duration="9870000" />
     </task>
     <servers />
   </component>
