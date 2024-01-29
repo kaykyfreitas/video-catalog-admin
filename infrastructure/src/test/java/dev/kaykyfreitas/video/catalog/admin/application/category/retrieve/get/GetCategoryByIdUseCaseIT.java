@@ -49,9 +49,8 @@ public class GetCategoryByIdUseCaseIT {
         Assertions.assertEquals(expectedName, actualCategory.name());
         Assertions.assertEquals(expectedDescription, actualCategory.description());
         Assertions.assertEquals(expectedIsActive, actualCategory.isActive());
-        // TODO Ajustar formatação nanosegundos
-//        Assertions.assertEquals(aCategory.getCreatedAt(), actualCategory.createdAt());
-//        Assertions.assertEquals(aCategory.getUpdatedAt(), actualCategory.updatedAt());
+        Assertions.assertEquals(aCategory.getCreatedAt(), actualCategory.createdAt());
+        Assertions.assertEquals(aCategory.getUpdatedAt(), actualCategory.updatedAt());
         Assertions.assertEquals(aCategory.getDeletedAt(), actualCategory.deletedAt());
     }
 
