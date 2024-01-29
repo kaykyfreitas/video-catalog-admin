@@ -1,6 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.domain.category;
 
 import dev.kaykyfreitas.video.catalog.admin.domain.AggregateRoot;
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.InstantUtils;
 import dev.kaykyfreitas.video.catalog.admin.domain.validation.ValidationHandler;
 
 import java.time.Instant;
@@ -34,8 +35,8 @@ public class Category extends AggregateRoot<CategoryId> implements Cloneable {
 
     public static Category newCategory(final String aName, final String aDescription, final boolean isActive) {
         final var id = CategoryId.unique();
-        final var now = Instant.now();
-        final var deletedAt = isActive ? null : Instant.now();
+        final var now = InstantUtils.now();
+        final var deletedAt = isActive ? null : InstantUtils.now();
         return new Category(id, aName, aDescription, isActive, now, now, deletedAt);
     }
 
@@ -78,17 +79,17 @@ public class Category extends AggregateRoot<CategoryId> implements Cloneable {
 
     public Category deactivate() {
         if (Objects.isNull(this.deletedAt))
-            this.deletedAt = Instant.now();
+            this.deletedAt = InstantUtils.now();
 
         this.active = false;
-        this.updatedAt = Instant.now();
+        this.updatedAt = InstantUtils.now();
         return this;
     }
 
     public Category activate() {
         this.deletedAt = null;
         this.active = true;
-        this.updatedAt = Instant.now();
+        this.updatedAt = InstantUtils.now();
         return this;
     }
 
