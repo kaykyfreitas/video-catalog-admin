@@ -49,7 +49,7 @@ public class CategoryController implements CategoryAPI {
     }
 
     @Override
-    public ResponseEntity<?> createCategory(final CreateCategoryRequest input) {
+    public ResponseEntity<?> create(final CreateCategoryRequest input) {
         final var aCommand = CreateCategoryCommand.with(
                 input.name(),
                 input.description(),
@@ -66,7 +66,7 @@ public class CategoryController implements CategoryAPI {
     }
 
     @Override
-    public Pagination<CategoryListResponse> createCategory(
+    public Pagination<CategoryListResponse> list(
             final String search,
             final int page,
             final int perPage,

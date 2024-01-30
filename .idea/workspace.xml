@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/GenreAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/CreateGenreRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreListResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/UpdateGenreRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb94186c-c502-4b98-bb9c-a46a3c2417f0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bb94186c-c502-4b98-bb9c-a46a3c2417f0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,92 +77,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.CreateGenreUseCaseIT.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.testDependenciesInjected.executor": "Run",
-    "Gradle.GetGenreByIdUseCaseIT.executor": "Run",
-    "Gradle.ListGenreUseCaseIT.executor": "Run",
-    "Gradle.ListGenreUseCaseTest.executor": "Run",
-    "Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre.executor": "Run",
-    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'.executor": "Run",
-    "Gradle.Tests in 'video-catalog-admin.infrastructure.test'.executor": "Run",
-    "Gradle.UpdateGenreUseCaseIT.executor": "Run",
-    "Gradle.video-catalog-admin [test].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.CreateGenreUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.testDependenciesInjected.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetGenreByIdUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListGenreUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListGenreUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'video-catalog-admin.infrastructure.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateGenreUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.video-catalog-admin [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Gradle.ListGenreUseCaseIT">
-    <configuration name="CreateGenreUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.genre.create.CreateGenreUseCaseIT&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GetGenreByIdUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.genre.retrieve.get.GetGenreByIdUseCaseIT&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+}</component>
+  <component name="RunManager" selected="Gradle.video-catalog-admin [test]">
     <configuration name="ListGenreUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -196,28 +139,70 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UpdateGenreUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="video-catalog-admin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.genre.update.UpdateGenreUseCaseIT&quot;" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="video-catalog-admin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="video-catalog-admin [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="video-catalog-admin [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -251,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ListGenreUseCaseIT" />
-        <item itemvalue="Gradle.UpdateGenreUseCaseIT" />
         <item itemvalue="Gradle.video-catalog-admin [test]" />
-        <item itemvalue="Gradle.GetGenreByIdUseCaseIT" />
-        <item itemvalue="Gradle.CreateGenreUseCaseIT" />
+        <item itemvalue="Gradle.video-catalog-admin [testClasses]" />
+        <item itemvalue="Gradle.video-catalog-admin [build]" />
+        <item itemvalue="Gradle.video-catalog-admin [clean]" />
+        <item itemvalue="Gradle.ListGenreUseCaseIT" />
       </list>
     </recent_temporary>
   </component>
