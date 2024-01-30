@@ -58,7 +58,7 @@ public class DefaultCreateGenreUseCase extends CreateGenreUseCase {
 
             final var missingIdsMessage = commandIds.stream()
                     .map(CategoryId::getValue)
-                    .collect(Collectors.joining(" ,"));
+                    .collect(Collectors.joining(", "));
 
             notification.append(new Error("some categories could not be found: %s".formatted(missingIdsMessage)));
         }
