@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreResponseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/MockDsl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/genre/GenreE2ETest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/category/CategoryE2ETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/category/CategoryE2ETest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +67,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -89,9 +90,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.CategoryE2ETest.executor": "Run",
+    "Gradle.CreateGenreRequestTest.executor": "Run",
     "Gradle.CreateGenreUseCaseIT.executor": "Run",
     "Gradle.GenreAPITest.executor": "Run",
     "Gradle.GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres.executor": "Run",
+    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithCategories.executor": "Run",
+    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithValidValues.executor": "Debug",
+    "Gradle.GenreE2ETest.executor": "Run",
+    "Gradle.GenreListResponseTest.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
@@ -104,9 +111,12 @@
     "Gradle.ListGenreUseCaseIT.executor": "Run",
     "Gradle.ListGenreUseCaseTest.executor": "Run",
     "Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre.executor": "Run",
+    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.e2e'.executor": "Run",
     "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'.executor": "Run",
     "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.api'.executor": "Run",
+    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'.executor": "Run",
     "Gradle.Tests in 'video-catalog-admin.infrastructure.test'.executor": "Run",
+    "Gradle.UpdateGenreRequestTest.executor": "Run",
     "Gradle.UpdateGenreUseCaseIT.executor": "Run",
     "Gradle.video-catalog-admin [build].executor": "Run",
     "Gradle.video-catalog-admin [clean].executor": "Run",
@@ -132,8 +142,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'">
-    <configuration name="CreateGenreRequestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CategoryE2ETest">
+    <configuration name="CategoryE2ETest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -146,7 +156,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.CreateGenreRequestTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.category.CategoryE2ETest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +167,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GenreListResponseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GenreE2ETest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,7 +180,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.GenreListResponseTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.genre.GenreE2ETest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,7 +191,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GenreResponseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithCategories" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -194,7 +204,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.GenreResponseTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.genre.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithCategories&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,7 +215,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithValidValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -218,7 +228,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.*&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.genre.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithValidValues&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,7 +239,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UpdateGenreRequestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'dev.kaykyfreitas.video.catalog.admin.e2e'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -242,7 +252,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.UpdateGenreRequestTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -262,11 +272,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'" />
-        <item itemvalue="Gradle.GenreListResponseTest" />
-        <item itemvalue="Gradle.UpdateGenreRequestTest" />
-        <item itemvalue="Gradle.CreateGenreRequestTest" />
-        <item itemvalue="Gradle.GenreResponseTest" />
+        <item itemvalue="Gradle.CategoryE2ETest" />
+        <item itemvalue="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.e2e'" />
+        <item itemvalue="Gradle.GenreE2ETest" />
+        <item itemvalue="Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithCategories" />
+        <item itemvalue="Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithValidValues" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +304,7 @@
       <workItem from="1705615240793" duration="564000" />
       <workItem from="1706045552505" duration="14037000" />
       <workItem from="1706577584119" duration="2057000" />
-      <workItem from="1706914808099" duration="5668000" />
+      <workItem from="1706914808099" duration="10183000" />
     </task>
     <servers />
   </component>
@@ -312,6 +322,31 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/controllers/GenreController.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/genre/create/DefaultCreateGenreUseCase.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/genre/GenreE2ETest.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
