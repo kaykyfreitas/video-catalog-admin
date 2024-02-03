@@ -8,6 +8,8 @@ import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.Creat
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.models.UpdateCategoryRequest;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.configuration.json.Json;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.CreateGenreRequest;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.GenreResponse;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.UpdateGenreRequest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
@@ -61,6 +63,45 @@ public interface MockDsl {
         return this.retrieve("/categories/", anId, CategoryResponse.class);
     }
 
+    /**
+     * Genre
+     */
+    default GenreId givenAGenre(final String aName, final boolean isActive, final List<CategoryId> categories) throws Exception {
+        final var aRequestBody = new CreateGenreRequest(aName, mapTo(categories, CategoryId::getValue), isActive);
+        final var actualId = this.given("/genres", aRequestBody);
+        return GenreId.from(actualId);
+    }
+
+    default ResultActions listGenres(final int page, final int perPage) throws Exception {
+        return this.listGenres(page, perPage, "", "", "");
+    }
+
+    default ResultActions listGenres(final int page, final int perPage, final String search) throws Exception {
+        return this.listGenres(page, perPage, search, "", "");
+    }
+
+    default ResultActions listGenres(
+            final int page,
+            final int perPage,
+            final String search,
+            final String sort,
+            final String direction
+    ) throws Exception {
+        return this.list("/genres", page, perPage, search, sort, direction);
+    }
+
+    default GenreResponse retrieveAGenre(final Identifier anId) throws Exception {
+        return this.retrieve("/genres/", anId, GenreResponse.class);
+    }
+
+    default ResultActions updateAGenre(final Identifier anId, final UpdateGenreRequest aRequest) throws Exception {
+        return this.update("/genres/", anId, aRequest);
+    }
+
+    default ResultActions deleteAGenre(final Identifier anId) throws Exception {
+        return this.delete("/genres/", anId);
+    }
+
     default <A, D> List<D> mapTo(final List<A> actual, final Function<A, D> mapper) {
         return actual.stream()
                 .map(mapper)
@@ -102,8 +143,8 @@ public interface MockDsl {
 
     private <T> T retrieve(final String url, final Identifier anId, final Class<T> clazz) throws Exception {
         final var aRequest = MockMvcRequestBuilders.get(url + anId.getValue())
-                .contentType(MediaType.APPLICATION_JSON)
-                .accept(MediaType.APPLICATION_JSON);
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
+                .accept(MediaType.APPLICATION_JSON_UTF8);
 
         final var json = this.mvc().perform(aRequest)
                 .andExpect(status().isOk())
