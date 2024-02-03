@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/controllers/GenreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/presenter/GenreApiPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/GenreAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreResponseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/genre/retrieve/list/GenreListOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/genre/retrieve/list/GenreListOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/CreateGenreRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/CreateGenreRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreListResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreListResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/UpdateGenreRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/UpdateGenreRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +66,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,17 +91,21 @@
   "keyToString": {
     "Gradle.CreateGenreUseCaseIT.executor": "Run",
     "Gradle.GenreAPITest.executor": "Run",
+    "Gradle.GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk.executor": "Run",
     "Gradle.GenreMySQLGatewayTest.testDependenciesInjected.executor": "Run",
+    "Gradle.GenreResponseTest.executor": "Run",
+    "Gradle.GenreResponseTest.testUnmarshall.executor": "Run",
     "Gradle.GetGenreByIdUseCaseIT.executor": "Run",
     "Gradle.ListGenreUseCaseIT.executor": "Run",
     "Gradle.ListGenreUseCaseTest.executor": "Run",
     "Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre.executor": "Run",
     "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'.executor": "Run",
+    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.api'.executor": "Run",
     "Gradle.Tests in 'video-catalog-admin.infrastructure.test'.executor": "Run",
     "Gradle.UpdateGenreUseCaseIT.executor": "Run",
     "Gradle.video-catalog-admin [build].executor": "Run",
@@ -133,8 +132,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.api'">
-    <configuration name="GenreAPITest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'">
+    <configuration name="CreateGenreRequestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +146,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.api.GenreAPITest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.CreateGenreRequestTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -158,7 +157,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GenreListResponseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -171,7 +170,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.api.GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.GenreListResponseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,7 +181,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.api'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GenreResponseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -195,7 +194,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.api.*&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.GenreResponseTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,48 +205,52 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="video-catalog-admin [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="testClasses" />
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="video-catalog-admin [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UpdateGenreRequestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.UpdateGenreRequestTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -259,11 +262,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.api'" />
-        <item itemvalue="Gradle.GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres" />
-        <item itemvalue="Gradle.GenreAPITest" />
-        <item itemvalue="Gradle.video-catalog-admin [test]" />
-        <item itemvalue="Gradle.video-catalog-admin [testClasses]" />
+        <item itemvalue="Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'" />
+        <item itemvalue="Gradle.GenreListResponseTest" />
+        <item itemvalue="Gradle.UpdateGenreRequestTest" />
+        <item itemvalue="Gradle.CreateGenreRequestTest" />
+        <item itemvalue="Gradle.GenreResponseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -291,11 +294,26 @@
       <workItem from="1705615240793" duration="564000" />
       <workItem from="1706045552505" duration="14037000" />
       <workItem from="1706577584119" duration="2057000" />
-      <workItem from="1706914808099" duration="4245000" />
+      <workItem from="1706914808099" duration="5668000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/models/GenreResponseTest.java</url>
+          <line>50</line>
+          <properties class="dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models.GenreResponseTest" method="testUnmarshall">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
