@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/MockDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/MockDsl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +46,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="video-catalog-admin" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="video-catalog-admin" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -88,6 +87,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build video-catalog-admin.executor": "Run",
+    "Gradle.CastMemberTest.executor": "Run",
+    "Gradle.CastMemberTest.givenAValidParams_WhenCallsNewMember_thenInstantiateACastMember.executor": "Run",
     "Gradle.CategoryE2ETest.executor": "Run",
     "Gradle.CreateGenreRequestTest.executor": "Run",
     "Gradle.CreateGenreUseCaseIT.executor": "Run",
@@ -124,10 +126,17 @@
     "Gradle.video-catalog-admin [build].executor": "Run",
     "Gradle.video-catalog-admin [clean].executor": "Run",
     "Gradle.video-catalog-admin [testClasses].executor": "Run",
-    "Gradle.video-catalog-admin [test].executor": "Run",
+    "Gradle.video-catalog-admin [test].executor": "Coverage",
+    "JUnit.All in video-catalog-admin (1).executor": "Coverage",
+    "JUnit.All in video-catalog-admin.executor": "Coverage",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Main.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
@@ -145,8 +154,8 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.GenreE2ETest">
-    <configuration name="GenreE2ETest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CastMemberTest">
+    <configuration name="CastMemberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,9 +166,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
+            <option value=":domain:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.genre.GenreE2ETest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -170,7 +179,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GenreE2ETest.asACatalogAdminIShouldBeAbleToGetAGenreByItsIdentifier" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CastMemberTest.givenAValidParams_WhenCallsNewMember_thenInstantiateACastMember" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -181,9 +190,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
+            <option value=":domain:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.genre.GenreE2ETest.asACatalogAdminIShouldBeAbleToGetAGenreByItsIdentifier&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberTest.givenAValidParams_WhenCallsNewMember_thenInstantiateACastMember&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,77 +203,43 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GenreE2ETest.asACatalogAdminIShouldBeAbleToSearchBetweenAllGenres" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="video-catalog-admin [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.genre.GenreE2ETest.asACatalogAdminIShouldBeAbleToSearchBetweenAllGenres&quot;" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GenreE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingANotFoundGenre" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.genre.GenreE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingANotFoundGenre&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="All in video-catalog-admin (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="video-catalog-admin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="GenreE2ETest.asACatalogAdminIShouldBeAbleToSortAllGenresByNameDesc" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.genre.GenreE2ETest.asACatalogAdminIShouldBeAbleToSortAllGenresByNameDesc&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="All in video-catalog-admin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="video-catalog-admin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="video-catalog-admin.infrastructure.main" />
@@ -275,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GenreE2ETest" />
-        <item itemvalue="Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToGetAGenreByItsIdentifier" />
-        <item itemvalue="Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingANotFoundGenre" />
-        <item itemvalue="Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSortAllGenresByNameDesc" />
-        <item itemvalue="Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSearchBetweenAllGenres" />
+        <item itemvalue="Gradle.CastMemberTest" />
+        <item itemvalue="Gradle.CastMemberTest.givenAValidParams_WhenCallsNewMember_thenInstantiateACastMember" />
+        <item itemvalue="Gradle.video-catalog-admin [test]" />
+        <item itemvalue="JUnit.All in video-catalog-admin (1)" />
+        <item itemvalue="JUnit.All in video-catalog-admin" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +282,7 @@
       <workItem from="1705615240793" duration="564000" />
       <workItem from="1706045552505" duration="14037000" />
       <workItem from="1706577584119" duration="2057000" />
-      <workItem from="1706914808099" duration="12175000" />
+      <workItem from="1706914808099" duration="17810000" />
     </task>
     <servers />
   </component>
@@ -353,5 +328,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/video_catalog_admin$video_catalog_admin__test_.ic" NAME="video-catalog-admin [test] Coverage Results" MODIFIED="1706999603126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/video_catalog_admin$All_in_video_catalog_admin__1_.ic" NAME="All in video-catalog-admin (1) Coverage Results" MODIFIED="1706999593720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/video_catalog_admin$All_in_video_catalog_admin.ic" NAME="All in video-catalog-admin Coverage Results" MODIFIED="1706999530167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
