@@ -64,7 +64,7 @@ public class GetCastMemberByIdUseCaseTest extends UseCaseTest {
         // given
         final var expectedId = CastMemberId.from("123");
 
-        final var expectedErrorMessage = "CastMember with id 123 was not found";
+        final var expectedErrorMessage = "castmember with id 123 was not found";
 
         when(castMemberGateway.findById(any()))
                 .thenReturn(Optional.empty());
