@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,75 +79,75 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build video-catalog-admin.executor": "Run",
-    "Gradle.CastMemberTest.executor": "Run",
-    "Gradle.CastMemberTest.givenAValidParams_WhenCallsNewMember_thenInstantiateACastMember.executor": "Run",
-    "Gradle.CategoryE2ETest.executor": "Run",
-    "Gradle.CreateGenreRequestTest.executor": "Run",
-    "Gradle.CreateGenreUseCaseIT.executor": "Run",
-    "Gradle.GenreAPITest.executor": "Run",
-    "Gradle.GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres.executor": "Run",
-    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithCategories.executor": "Run",
-    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithValidValues.executor": "Debug",
-    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToGetAGenreByItsIdentifier.executor": "Run",
-    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToNavigateThruAllGenres.executor": "Run",
-    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSearchBetweenAllGenres.executor": "Run",
-    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingANotFoundGenre.executor": "Run",
-    "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSortAllGenresByNameDesc.executor": "Run",
-    "Gradle.GenreE2ETest.executor": "Run",
-    "Gradle.GenreListResponseTest.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk.executor": "Run",
-    "Gradle.GenreMySQLGatewayTest.testDependenciesInjected.executor": "Run",
-    "Gradle.GenreResponseTest.executor": "Run",
-    "Gradle.GenreResponseTest.testUnmarshall.executor": "Run",
-    "Gradle.GetGenreByIdUseCaseIT.executor": "Run",
-    "Gradle.ListGenreUseCaseIT.executor": "Run",
-    "Gradle.ListGenreUseCaseTest.executor": "Run",
-    "Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre.executor": "Run",
-    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.e2e'.executor": "Run",
-    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'.executor": "Run",
-    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.api'.executor": "Run",
-    "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'.executor": "Run",
-    "Gradle.Tests in 'video-catalog-admin.infrastructure.test'.executor": "Run",
-    "Gradle.UpdateGenreRequestTest.executor": "Run",
-    "Gradle.UpdateGenreUseCaseIT.executor": "Run",
-    "Gradle.video-catalog-admin [build].executor": "Run",
-    "Gradle.video-catalog-admin [clean].executor": "Run",
-    "Gradle.video-catalog-admin [testClasses].executor": "Run",
-    "Gradle.video-catalog-admin [test].executor": "Coverage",
-    "JUnit.All in video-catalog-admin (1).executor": "Coverage",
-    "JUnit.All in video-catalog-admin.executor": "Coverage",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Main.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build video-catalog-admin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CastMemberTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CastMemberTest.givenAValidParams_WhenCallsNewMember_thenInstantiateACastMember.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CategoryE2ETest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateGenreRequestTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CreateGenreUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreAPITest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithCategories.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithValidValues.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToGetAGenreByItsIdentifier.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToNavigateThruAllGenres.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSearchBetweenAllGenres.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByGettingANotFoundGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToSortAllGenresByNameDesc.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreE2ETest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreListResponseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAPrePersistedGenre_whenCallsDeleteById_ShouldDeleteGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAValidGenreWithCategory_whenCallsCreateGenre_shouldPersistGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAValidGenre_whenCallsCreateGenre_shouldPersistGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.givenAnInvalidGenre_whenCallsDeleteById_ShouldReturnOk.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreMySQLGatewayTest.testDependenciesInjected.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreResponseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GenreResponseTest.testUnmarshall.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GetGenreByIdUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListGenreUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListGenreUseCaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ListGenreUseCaseTest.givenAValidQuery_whenCallsListGenre_shouldReturnGenre.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.e2e'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.api'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'video-catalog-admin.infrastructure.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateGenreRequestTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.UpdateGenreUseCaseIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.video-catalog-admin [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.video-catalog-admin [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.video-catalog-admin [testClasses].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.video-catalog-admin [test].executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in video-catalog-admin (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in video-catalog-admin.executor&quot;: &quot;Coverage&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.CastMemberTest">
     <configuration name="CastMemberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -282,7 +276,8 @@
       <workItem from="1705615240793" duration="564000" />
       <workItem from="1706045552505" duration="14037000" />
       <workItem from="1706577584119" duration="2057000" />
-      <workItem from="1706914808099" duration="17810000" />
+      <workItem from="1706914808099" duration="18413000" />
+      <workItem from="1708033483166" duration="103000" />
     </task>
     <servers />
   </component>
