@@ -3,6 +3,7 @@ package dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember;
 import dev.kaykyfreitas.video.catalog.admin.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.MySQLGatewayTest;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMember;
+import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberType;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.persistence.CastMemberJpaEntity;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.persistence.CastMemberRepository;
@@ -99,5 +100,37 @@ public class CastMemberMySQLGatewayTest {
         Assertions.assertEquals(aMember.getCreatedAt(), persistedMember.getCreatedAt());
         Assertions.assertTrue(aMember.getUpdatedAt().isBefore(persistedMember.getUpdatedAt()));
     }
-    
+
+    @Test
+    public void givenAValidCastMemberId_whenCallsDeleteById_shouldDeleteIt() {
+        // given
+        final var aMember = CastMember.newMember(Fixture.name(), Fixture.CastMember.type());
+
+        castMemberRepository.saveAndFlush(CastMemberJpaEntity.from(aMember));
+
+        Assertions.assertEquals(1, castMemberRepository.count());
+
+        // when
+        castMemberGateway.deleteById(aMember.getId());
+
+        // then
+        Assertions.assertEquals(0, castMemberRepository.count());
+    }
+
+    @Test
+    public void givenAnInvalidCastMemberId_whenCallsDeleteById_shouldIgnore() {
+        // given
+        final var aMember = CastMember.newMember(Fixture.name(), Fixture.CastMember.type());
+
+        castMemberRepository.saveAndFlush(CastMemberJpaEntity.from(aMember));
+
+        Assertions.assertEquals(1, castMemberRepository.count());
+
+        // when
+        castMemberGateway.deleteById(CastMemberId.from("123"));
+
+        // then
+        Assertions.assertEquals(1, castMemberRepository.count());
+    }
+
 }
