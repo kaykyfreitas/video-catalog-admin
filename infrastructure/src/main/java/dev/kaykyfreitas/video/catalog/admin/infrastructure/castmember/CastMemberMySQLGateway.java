@@ -7,6 +7,10 @@ import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.SearchQuery;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.persistence.CastMemberJpaEntity;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.persistence.CastMemberRepository;
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.utils.SpecificationUtils;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;
@@ -46,12 +50,35 @@ public class CastMemberMySQLGateway implements CastMemberGateway {
 
     @Override
     public Pagination<CastMember> findAll(final SearchQuery aQuery) {
-        return null;
+        final var page = PageRequest.of(
+                aQuery.page(),
+                aQuery.perPage(),
+                Sort.Direction.fromString(aQuery.direction()),
+                aQuery.sort()
+        );
+
+        final var whereClause = Optional.ofNullable(aQuery.terms())
+                .filter(str -> !str.isBlank())
+                .map(this::assembleSpecification)
+                .orElse(null);
+
+        final var pageResult = this.castMemberRepository.findAll(whereClause, page);
+
+        return new Pagination<>(
+                pageResult.getNumber(),
+                pageResult.getSize(),
+                pageResult.getTotalElements(),
+                pageResult.map(CastMemberJpaEntity::toAggregate).toList()
+        );
     }
 
-    private CastMember save(CastMember aCastMember) {
+    private CastMember save(final CastMember aCastMember) {
         return this.castMemberRepository.save(CastMemberJpaEntity.from(aCastMember))
                 .toAggregate();
+    }
+
+    private Specification<CastMemberJpaEntity> assembleSpecification(final String terms) {
+        return SpecificationUtils.like("name", terms);
     }
 
 }
