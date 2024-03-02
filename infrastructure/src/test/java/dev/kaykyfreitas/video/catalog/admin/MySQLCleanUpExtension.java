@@ -1,5 +1,6 @@
 package dev.kaykyfreitas.video.catalog.admin;
 
+import dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.persistence.CastMemberRepository;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.category.persistence.CategoryRepository;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.persistence.GenreRepository;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
@@ -17,12 +18,13 @@ public class MySQLCleanUpExtension implements BeforeEachCallback {
         final var appContext = SpringExtension.getApplicationContext(context);
 
         cleanUp(List.of(
+                appContext.getBean(CastMemberRepository.class),
                 appContext.getBean(GenreRepository.class),
                 appContext.getBean(CategoryRepository.class)
         ));
     }
 
-    private void cleanUp(final Collection<CrudRepository> repositories) {
+    private void cleanUp(final Collection<CrudRepository<?, ?>> repositories) {
         repositories.forEach(CrudRepository::deleteAll);
     }
 }
