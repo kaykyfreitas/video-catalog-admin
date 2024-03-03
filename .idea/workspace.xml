@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="" />
+    <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/ListCastMembersUseCaseIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,6 +120,7 @@
     "Gradle.GetCastMemberByIdUseCaseIT.executor": "Run",
     "Gradle.GetCastMemberByIdUseCaseTest.executor": "Run",
     "Gradle.GetGenreByIdUseCaseIT.executor": "Run",
+    "Gradle.ListCastMembersUseCaseIT.executor": "Run",
     "Gradle.ListCastMembersUseCaseTest.executor": "Run",
     "Gradle.ListGenreUseCaseIT.executor": "Run",
     "Gradle.ListGenreUseCaseTest.executor": "Run",
@@ -126,6 +130,7 @@
     "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.api'.executor": "Run",
     "Gradle.Tests in 'dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.models'.executor": "Run",
     "Gradle.Tests in 'video-catalog-admin.infrastructure.test'.executor": "Run",
+    "Gradle.UpdateCastMemberUseCaseIT.executor": "Run",
     "Gradle.UpdateCastMemberUseCaseTest.executor": "Run",
     "Gradle.UpdateGenreRequestTest.executor": "Run",
     "Gradle.UpdateGenreUseCaseIT.executor": "Run",
@@ -177,38 +182,14 @@
       <recent name="dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.list" />
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.update" />
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.delete" />
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.get" />
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.create" />
-      <recent name="dev.kaykyfreitas.video.catalog.admin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UpdateCastMemberUseCaseIT">
-    <configuration name="CastMemberMySQLGatewayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.CastMemberMySQLGatewayTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.ListCastMembersUseCaseIT">
     <configuration name="CreateCastMemberUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -281,6 +262,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="ListCastMembersUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.list.ListCastMembersUseCaseIT&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="UpdateCastMemberUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -314,11 +319,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ListCastMembersUseCaseIT" />
         <item itemvalue="Gradle.UpdateCastMemberUseCaseIT" />
         <item itemvalue="Gradle.DeleteCastMemberUseCaseIT" />
         <item itemvalue="Gradle.GetCastMemberByIdUseCaseIT" />
         <item itemvalue="Gradle.CreateCastMemberUseCaseIT" />
-        <item itemvalue="Gradle.CastMemberMySQLGatewayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +358,7 @@
       <workItem from="1709244454883" duration="772000" />
       <workItem from="1709343538924" duration="599000" />
       <workItem from="1709359868366" duration="13000" />
-      <workItem from="1709415873707" duration="8713000" />
+      <workItem from="1709415873707" duration="9389000" />
     </task>
     <servers />
   </component>
