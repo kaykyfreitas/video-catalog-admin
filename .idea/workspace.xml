@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/ListCastMembersUseCaseIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/CastMemberAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/controllers/CastMemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CreateCastMemberRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/UpdateCastMemberRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/presenter/CastMemberPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/CastMemberAPITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/CreateCastMemberOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/CreateCastMemberOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/DefaultCreateCastMemberUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/DefaultCreateCastMemberUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/delete/DefaultDeleteCastMemberUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/delete/DefaultDeleteCastMemberUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/get/DefaultGetCastMemberByIdUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/get/DefaultGetCastMemberByIdUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/DefaultListCastMembersUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/DefaultListCastMembersUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/DefaultUpdateCastMemberUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/DefaultUpdateCastMemberUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/UpdateCastMemberOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/UpdateCastMemberOutput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +61,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="video-catalog-admin" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="video-catalog-admin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -58,10 +79,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Record" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -84,6 +105,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build video-catalog-admin.executor": "Run",
+    "Gradle.CastMemberAPITest.executor": "Run",
     "Gradle.CastMemberMySQLGatewayTest.executor": "Run",
     "Gradle.CastMemberMySQLGatewayTest.givenAValidCastMember_whenCallsCreate_shouldPersistIt.executor": "Run",
     "Gradle.CastMemberMySQLGatewayTest.givenAnInvalidCastMemberId_whenCallsDeleteById_shouldIgnore.executor": "Run",
@@ -138,6 +160,7 @@
     "Gradle.video-catalog-admin [clean].executor": "Run",
     "Gradle.video-catalog-admin [testClasses].executor": "Run",
     "Gradle.video-catalog-admin [test].executor": "Run",
+    "Gradle.video-catalog-admin:domain [test].executor": "Run",
     "JUnit.All in video-catalog-admin (1).executor": "Coverage",
     "JUnit.All in video-catalog-admin.executor": "Coverage",
     "RequestMappingsPanelOrder0": "0",
@@ -154,7 +177,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/kayky/projects/codeflix/video-catalog-admin/infrastructure/src/main/resources/db/migration",
+    "last_opened_file_path": "/home/kayky/projects/codeflix/video-catalog-admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -189,8 +212,8 @@
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.create" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ListCastMembersUseCaseIT">
-    <configuration name="CreateCastMemberUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CastMemberAPITest">
+    <configuration name="CastMemberAPITest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -203,7 +226,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.castmember.create.CreateCastMemberUseCaseIT&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.api.CastMemberAPITest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,100 +237,92 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteCastMemberUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="video-catalog-admin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.castmember.delete.DeleteCastMemberUseCaseIT&quot;" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GetCastMemberByIdUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="video-catalog-admin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.get.GetCastMemberByIdUseCaseIT&quot;" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ListCastMembersUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="video-catalog-admin [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.list.ListCastMembersUseCaseIT&quot;" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UpdateCastMemberUseCaseIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="video-catalog-admin:domain [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/domain" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.castmember.update.UpdateCastMemberUseCaseIT&quot;" />
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -319,17 +334,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ListCastMembersUseCaseIT" />
-        <item itemvalue="Gradle.UpdateCastMemberUseCaseIT" />
-        <item itemvalue="Gradle.DeleteCastMemberUseCaseIT" />
-        <item itemvalue="Gradle.GetCastMemberByIdUseCaseIT" />
-        <item itemvalue="Gradle.CreateCastMemberUseCaseIT" />
+        <item itemvalue="Gradle.CastMemberAPITest" />
+        <item itemvalue="Gradle.video-catalog-admin [test]" />
+        <item itemvalue="Gradle.video-catalog-admin [build]" />
+        <item itemvalue="Gradle.video-catalog-admin [clean]" />
+        <item itemvalue="Gradle.video-catalog-admin:domain [test]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-25a4bffe" />
         <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-86fc8109" />
       </set>
     </attachedChunks>
@@ -359,6 +375,10 @@
       <workItem from="1709343538924" duration="599000" />
       <workItem from="1709359868366" duration="13000" />
       <workItem from="1709415873707" duration="9389000" />
+      <workItem from="1709427265313" duration="7811000" />
+      <workItem from="1709676320457" duration="68000" />
+      <workItem from="1709764158831" duration="4250000" />
+      <workItem from="1709956946021" duration="1250000" />
     </task>
     <servers />
   </component>

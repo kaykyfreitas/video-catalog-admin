@@ -7,7 +7,7 @@ import dev.kaykyfreitas.video.catalog.admin.domain.validation.handler.Notificati
 
 import java.util.Objects;
 
-public final class DefaultCreateCastMemberUseCase extends CreateCastMemberUseCase {
+public non-sealed class DefaultCreateCastMemberUseCase extends CreateCastMemberUseCase {
 
     private final CastMemberGateway castMemberGateway;
 

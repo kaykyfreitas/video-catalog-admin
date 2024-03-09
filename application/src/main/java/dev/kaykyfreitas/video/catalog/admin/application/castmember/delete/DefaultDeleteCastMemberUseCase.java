@@ -5,7 +5,7 @@ import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;
 
 import java.util.Objects;
 
-public final class DefaultDeleteCastMemberUseCase extends DeleteCastMemberUseCase {
+public non-sealed class DefaultDeleteCastMemberUseCase extends DeleteCastMemberUseCase {
 
     private final CastMemberGateway castMemberGateway;
 
