@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/castmember/CastMemberE2ETest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/AudioVideoMedia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/ImageMedia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/MediaStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/Video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoSearchQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/AudioVideoMediaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/ImageMediaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoValidatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberListResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberListResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/MockDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/MockDsl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,9 +77,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -92,6 +102,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AudioVideoMediaTest.executor": "Run",
+    "Gradle.AudioVideoMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue.executor": "Run",
+    "Gradle.AudioVideoMediaTest.givenValidParams_whenCallsNewImage_shouldReturnInstance.executor": "Run",
     "Gradle.Build video-catalog-admin.executor": "Run",
     "Gradle.CastMemberAPITest.executor": "Run",
     "Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCastMemberWithValidValues.executor": "Run",
@@ -137,6 +150,8 @@
     "Gradle.GetCastMemberByIdUseCaseIT.executor": "Run",
     "Gradle.GetCastMemberByIdUseCaseTest.executor": "Run",
     "Gradle.GetGenreByIdUseCaseIT.executor": "Run",
+    "Gradle.ImageMediaTest.executor": "Run",
+    "Gradle.ImageMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue.executor": "Run",
     "Gradle.ListCastMembersUseCaseIT.executor": "Run",
     "Gradle.ListCastMembersUseCaseTest.executor": "Run",
     "Gradle.ListGenreUseCaseIT.executor": "Run",
@@ -152,6 +167,8 @@
     "Gradle.UpdateCastMemberUseCaseTest.executor": "Run",
     "Gradle.UpdateGenreRequestTest.executor": "Run",
     "Gradle.UpdateGenreUseCaseIT.executor": "Run",
+    "Gradle.VideoTest.executor": "Run",
+    "Gradle.VideoValidatorTest.executor": "Run",
     "Gradle.video-catalog-admin [build].executor": "Run",
     "Gradle.video-catalog-admin [clean].executor": "Run",
     "Gradle.video-catalog-admin [testClasses].executor": "Run",
@@ -208,8 +225,8 @@
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.create" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CastMemberE2ETest">
-    <configuration name="CastMemberE2ETest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AudioVideoMediaTest">
+    <configuration name="AudioVideoMediaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -220,9 +237,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
+            <option value=":domain:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.castmember.CastMemberE2ETest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.video.AudioVideoMediaTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -233,7 +250,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CastMemberE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCastMemberWithValidValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AudioVideoMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -244,9 +261,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
+            <option value=":domain:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.castmember.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCastMemberWithValidValues&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.video.AudioVideoMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -257,7 +274,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CastMemberE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByCreatingANewCastMemberWithInvalidValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AudioVideoMediaTest.givenValidParams_whenCallsNewImage_shouldReturnInstance" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -268,9 +285,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
+            <option value=":domain:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.castmember.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByCreatingANewCastMemberWithInvalidValues&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.video.AudioVideoMediaTest.givenValidParams_whenCallsNewImage_shouldReturnInstance&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -281,7 +298,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CastMemberE2ETest.asACatalogAdminIShouldBeAbleToUpdateACastMemberByItsIdentifier" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ImageMediaTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -292,9 +309,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
+            <option value=":domain:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.castmember.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToUpdateACastMemberByItsIdentifier&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.video.ImageMediaTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -305,7 +322,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UpdateCastMemberRequestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ImageMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -316,9 +333,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":infrastructure:test" />
+            <option value=":domain:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.models.UpdateCastMemberRequestTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.domain.video.ImageMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -338,11 +355,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CastMemberE2ETest" />
-        <item itemvalue="Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToUpdateACastMemberByItsIdentifier" />
-        <item itemvalue="Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByCreatingANewCastMemberWithInvalidValues" />
-        <item itemvalue="Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCastMemberWithValidValues" />
-        <item itemvalue="Gradle.UpdateCastMemberRequestTest" />
+        <item itemvalue="Gradle.AudioVideoMediaTest" />
+        <item itemvalue="Gradle.AudioVideoMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue" />
+        <item itemvalue="Gradle.AudioVideoMediaTest.givenValidParams_whenCallsNewImage_shouldReturnInstance" />
+        <item itemvalue="Gradle.ImageMediaTest" />
+        <item itemvalue="Gradle.ImageMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -383,11 +400,23 @@
       <workItem from="1709676320457" duration="68000" />
       <workItem from="1709764158831" duration="4250000" />
       <workItem from="1709956946021" duration="6551000" />
+      <workItem from="1710011829002" duration="10266000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
