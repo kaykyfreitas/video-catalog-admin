@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberListResponseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberResponseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CreateCastMemberRequestTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/UpdateCastMemberRequestTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/castmember/CastMemberE2ETest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberListResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberListResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/MockDsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/MockDsl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +94,10 @@
   "keyToString": {
     "Gradle.Build video-catalog-admin.executor": "Run",
     "Gradle.CastMemberAPITest.executor": "Run",
+    "Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCastMemberWithValidValues.executor": "Run",
+    "Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByCreatingANewCastMemberWithInvalidValues.executor": "Run",
+    "Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToUpdateACastMemberByItsIdentifier.executor": "Run",
+    "Gradle.CastMemberE2ETest.executor": "Run",
     "Gradle.CastMemberListResponseTest.executor": "Run",
     "Gradle.CastMemberMySQLGatewayTest.executor": "Run",
     "Gradle.CastMemberMySQLGatewayTest.givenAValidCastMember_whenCallsCreate_shouldPersistIt.executor": "Run",
@@ -204,8 +208,8 @@
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.create" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UpdateCastMemberRequestTest">
-    <configuration name="CastMemberAPITest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CastMemberE2ETest">
+    <configuration name="CastMemberE2ETest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -218,7 +222,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.api.CastMemberAPITest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.castmember.CastMemberE2ETest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,7 +233,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CastMemberListResponseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CastMemberE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCastMemberWithValidValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -242,7 +246,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.models.CastMemberListResponseTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.castmember.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCastMemberWithValidValues&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -253,7 +257,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CastMemberResponseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CastMemberE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByCreatingANewCastMemberWithInvalidValues" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -266,7 +270,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.models.CastMemberResponseTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.castmember.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByCreatingANewCastMemberWithInvalidValues&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -277,7 +281,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CreateCastMemberRequestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CastMemberE2ETest.asACatalogAdminIShouldBeAbleToUpdateACastMemberByItsIdentifier" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -290,7 +294,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.models.CreateCastMemberRequestTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.e2e.castmember.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToUpdateACastMemberByItsIdentifier&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -334,11 +338,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CastMemberE2ETest" />
+        <item itemvalue="Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToUpdateACastMemberByItsIdentifier" />
+        <item itemvalue="Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToSeeATreatedErrorByCreatingANewCastMemberWithInvalidValues" />
+        <item itemvalue="Gradle.CastMemberE2ETest.asACatalogAdminIShouldBeAbleToCreateANewCastMemberWithValidValues" />
         <item itemvalue="Gradle.UpdateCastMemberRequestTest" />
-        <item itemvalue="Gradle.CreateCastMemberRequestTest" />
-        <item itemvalue="Gradle.CastMemberListResponseTest" />
-        <item itemvalue="Gradle.CastMemberResponseTest" />
-        <item itemvalue="Gradle.CastMemberAPITest" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +382,7 @@
       <workItem from="1709427265313" duration="7811000" />
       <workItem from="1709676320457" duration="68000" />
       <workItem from="1709764158831" duration="4250000" />
-      <workItem from="1709956946021" duration="1883000" />
+      <workItem from="1709956946021" duration="6551000" />
     </task>
     <servers />
   </component>
