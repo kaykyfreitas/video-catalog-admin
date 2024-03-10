@@ -3,6 +3,7 @@ package dev.kaykyfreitas.video.catalog.admin.domain.castmember;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.SearchQuery;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface CastMemberGateway {
@@ -11,4 +12,5 @@ public interface CastMemberGateway {
     Optional<CastMember> findById(CastMemberId anId);
     CastMember update(CastMember aCastMember);
     Pagination<CastMember> findAll(SearchQuery aQuery);
+    List<CastMemberId> existsByIds(Iterable<CastMemberId> ids);
 }

@@ -103,9 +103,4 @@ public class CreateGenreUseCaseTest extends UseCaseTest {
         ));
     }
 
-    private List<String> asString(List<CategoryId> categories) {
-        return categories.stream()
-                .map(CategoryId::getValue)
-                .toList();
-    }
 }

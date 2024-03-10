@@ -138,7 +138,7 @@ public class Video extends AggregateRoot<VideoId> {
 
     @Override
     public void validate(final ValidationHandler handler) {
-
+        new VideoValidator(this, handler).validate();
     }
 
     public Video update(

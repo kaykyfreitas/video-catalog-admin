@@ -3,6 +3,7 @@ package dev.kaykyfreitas.video.catalog.admin.domain.genre;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.SearchQuery;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface GenreGateway {
@@ -11,4 +12,5 @@ public interface GenreGateway {
     Optional<Genre> findById(GenreId anId);
     Genre update(Genre aGenre);
     Pagination<Genre> findAll(SearchQuery aQuery);
+    List<GenreId> existsByIds(Iterable<GenreId> ids);
 }
