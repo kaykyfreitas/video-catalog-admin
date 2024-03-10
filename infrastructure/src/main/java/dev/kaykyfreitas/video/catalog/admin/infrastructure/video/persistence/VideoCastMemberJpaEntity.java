@@ -4,7 +4,6 @@ import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;
 
 import javax.persistence.*;
 import java.util.Objects;
-import java.util.UUID;
 
 @Table(name = "videos_cast_members")
 @Entity(name = "VideoCastMember")
@@ -27,7 +26,7 @@ public class VideoCastMemberJpaEntity {
 
     public static VideoCastMemberJpaEntity from(final VideoJpaEntity video, final CastMemberId castMemberId) {
         return new VideoCastMemberJpaEntity(
-                VideoCastMemberId.from(video.getId(), UUID.fromString(castMemberId.getValue())),
+                VideoCastMemberId.from(video.getId(), castMemberId.getValue()),
                 video
         );
     }

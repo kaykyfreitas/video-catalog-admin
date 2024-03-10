@@ -11,6 +11,7 @@ import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.InternalErrorExcep
 import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotificationException;
 import dev.kaykyfreitas.video.catalog.admin.domain.genre.GenreGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.genre.GenreId;
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.*;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.Resource.Type;
 import org.junit.jupiter.api.Assertions;
@@ -1110,7 +1111,7 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
     private void mockImageMedia() {
         when(mediaResourceGateway.storeImage(any(), any())).thenAnswer(t -> {
             final var resource = t.getArgument(1, Resource.class);
-            return ImageMedia.with(UUID.randomUUID().toString(), resource.name(), "/image");
+            return ImageMedia.with(IdUtils.uuid(), resource.name(), "/image");
         });
     }
 
@@ -1118,7 +1119,7 @@ public class UpdateVideoUseCaseTest extends UseCaseTest {
         when(mediaResourceGateway.storeAudioVideo(any(), any())).thenAnswer(t -> {
             final var resource = t.getArgument(1, Resource.class);
             return AudioVideoMedia.with(
-                    UUID.randomUUID().toString(),
+                    IdUtils.uuid(),
                     resource.name(),
                     "/video",
                     "",

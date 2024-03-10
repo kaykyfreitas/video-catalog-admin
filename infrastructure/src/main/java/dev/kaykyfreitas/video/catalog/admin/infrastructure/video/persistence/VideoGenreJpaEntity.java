@@ -4,7 +4,6 @@ import dev.kaykyfreitas.video.catalog.admin.domain.genre.GenreId;
 
 import javax.persistence.*;
 import java.util.Objects;
-import java.util.UUID;
 
 @Entity(name = "VideoGenre")
 @Table(name = "videos_genres")
@@ -27,7 +26,7 @@ public class VideoGenreJpaEntity {
 
     public static VideoGenreJpaEntity from(final VideoJpaEntity video, final GenreId genreId) {
         return new VideoGenreJpaEntity(
-                VideoGenreId.from(video.getId(), UUID.fromString(genreId.getValue())),
+                VideoGenreId.from(video.getId(), genreId.getValue()),
                 video
         );
     }

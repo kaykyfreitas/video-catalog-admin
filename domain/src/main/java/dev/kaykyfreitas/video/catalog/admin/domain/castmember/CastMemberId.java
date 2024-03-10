@@ -1,9 +1,9 @@
 package dev.kaykyfreitas.video.catalog.admin.domain.castmember;
 
 import dev.kaykyfreitas.video.catalog.admin.domain.Identifier;
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
 
 import java.util.Objects;
-import java.util.UUID;
 
 public class CastMemberId extends Identifier {
     private final String value;
@@ -14,15 +14,11 @@ public class CastMemberId extends Identifier {
     }
 
     public static CastMemberId unique() {
-        return CastMemberId.from(UUID.randomUUID());
+        return CastMemberId.from(IdUtils.uuid());
     }
 
     public static CastMemberId from(final String anId) {
         return new CastMemberId(anId);
-    }
-
-    public static CastMemberId from(final UUID anId) {
-        return new CastMemberId(anId.toString().toLowerCase());
     }
 
     @Override

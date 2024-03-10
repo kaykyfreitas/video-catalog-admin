@@ -1,28 +1,23 @@
 package dev.kaykyfreitas.video.catalog.admin.domain.category;
 
 import dev.kaykyfreitas.video.catalog.admin.domain.Identifier;
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
 
 import java.util.Objects;
-import java.util.UUID;
 
 public class CategoryId extends Identifier {
     private final String value;
 
     private CategoryId(String value) {
-        Objects.requireNonNull(value);
-        this.value = value;
+        this.value = Objects.requireNonNull(value);
     }
 
     public static CategoryId unique() {
-        return CategoryId.from(UUID.randomUUID());
+        return CategoryId.from(IdUtils.uuid());
     }
 
     public static CategoryId from(final String anId) {
         return new CategoryId(anId);
-    }
-
-    public static CategoryId from(final UUID anId) {
-        return new CategoryId(anId.toString().toLowerCase());
     }
 
     @Override

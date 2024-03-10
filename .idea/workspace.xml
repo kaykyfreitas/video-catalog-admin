@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/utils/IdUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/get/GetVideoByIdUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/get/GetVideoByIdUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/update/UpdateVideoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/update/UpdateVideoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/category/CategoryId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/category/CategoryId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/genre/GenreId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/genre/GenreId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/AudioVideoMediaJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/AudioVideoMediaJpaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoCastMemberId.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoCastMemberId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoCastMemberJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoCastMemberJpaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoCategoryId.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoCategoryId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoCategoryJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoCategoryJpaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoGenreId.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoGenreId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoGenreJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoGenreJpaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoJpaEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V1__Initial.sql" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V1__Initial.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V2__Create_Genre_Aggregate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V2__Create_Genre_Aggregate.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V3__Create_CastMember_Aggregate.sql" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V3__Create_CastMember_Aggregate.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +60,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="video-catalog-admin" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="video-catalog-admin" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -230,79 +244,7 @@
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.get" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ListVideoUseCaseTest">
-    <configuration name="CreateVideoUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":application:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.create.CreateVideoUseCaseTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="DeleteVideoUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":application:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.delete.DeleteVideoUseCaseTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GetVideoByIdUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":application:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.retrieve.get.GetVideoByIdUseCaseTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.video-catalog-admin [test]">
     <configuration name="ListVideoUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -351,6 +293,72 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="video-catalog-admin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="video-catalog-admin [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testClasses" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="video-catalog-admin [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="video-catalog-admin.infrastructure.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="dev.kaykyfreitas.video.catalog.admin.infrastructure.Main" />
@@ -360,11 +368,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.video-catalog-admin [test]" />
+        <item itemvalue="Gradle.video-catalog-admin [testClasses]" />
+        <item itemvalue="Gradle.video-catalog-admin [build]" />
         <item itemvalue="Gradle.ListVideoUseCaseTest" />
         <item itemvalue="Gradle.UpdateVideoUseCaseTest" />
-        <item itemvalue="Gradle.GetVideoByIdUseCaseTest" />
-        <item itemvalue="Gradle.DeleteVideoUseCaseTest" />
-        <item itemvalue="Gradle.CreateVideoUseCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +414,7 @@
       <workItem from="1709764158831" duration="4250000" />
       <workItem from="1709956946021" duration="6551000" />
       <workItem from="1710011829002" duration="19732000" />
-      <workItem from="1710047346440" duration="15718000" />
+      <workItem from="1710047346440" duration="17988000" />
     </task>
     <servers />
   </component>

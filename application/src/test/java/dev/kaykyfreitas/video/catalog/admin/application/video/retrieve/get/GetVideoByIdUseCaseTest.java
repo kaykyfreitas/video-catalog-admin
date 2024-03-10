@@ -3,6 +3,7 @@ package dev.kaykyfreitas.video.catalog.admin.application.video.retrieve.get;
 import dev.kaykyfreitas.video.catalog.admin.application.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.application.UseCaseTest;
 import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotFoundException;
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.*;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.Resource.Type;
 import org.junit.jupiter.api.Assertions;
@@ -14,7 +15,6 @@ import java.time.Year;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
@@ -122,7 +122,7 @@ public class GetVideoByIdUseCaseTest extends UseCaseTest {
     }
 
     public AudioVideoMedia audioVideo(final Type type) {
-        final var checksum = UUID.randomUUID().toString();
+        final var checksum = IdUtils.uuid();
         return AudioVideoMedia.with(
                 checksum,
                 type.name().toLowerCase(),
@@ -133,7 +133,7 @@ public class GetVideoByIdUseCaseTest extends UseCaseTest {
     }
 
     public ImageMedia image(final Type type) {
-        final var checksum = UUID.randomUUID().toString();
+        final var checksum = IdUtils.uuid();
         return ImageMedia.with(
                 checksum,
                 type.name().toLowerCase(),

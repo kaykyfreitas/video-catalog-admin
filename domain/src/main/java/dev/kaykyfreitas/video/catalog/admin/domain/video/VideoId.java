@@ -1,9 +1,9 @@
 package dev.kaykyfreitas.video.catalog.admin.domain.video;
 
 import dev.kaykyfreitas.video.catalog.admin.domain.Identifier;
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
 
 import java.util.Objects;
-import java.util.UUID;
 
 public class VideoId extends Identifier {
     private final String value;
@@ -16,12 +16,8 @@ public class VideoId extends Identifier {
         return new VideoId(anId.toLowerCase());
     }
 
-    public static VideoId from(final UUID anId) {
-        return VideoId.from(anId.toString());
-    }
-
     public static VideoId unique() {
-        return VideoId.from(UUID.randomUUID());
+        return VideoId.from(IdUtils.uuid());
     }
 
     @Override

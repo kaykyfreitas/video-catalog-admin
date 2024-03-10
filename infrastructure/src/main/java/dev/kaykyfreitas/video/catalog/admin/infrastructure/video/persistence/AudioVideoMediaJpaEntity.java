@@ -4,7 +4,6 @@ import dev.kaykyfreitas.video.catalog.admin.domain.video.AudioVideoMedia;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.MediaStatus;
 
 import javax.persistence.*;
-import java.util.UUID;
 
 @Entity(name = "AudioVideoMedia")
 @Table(name = "videos_video_media")
