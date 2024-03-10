@@ -1063,7 +1063,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </collation>
     <schema id="288" parent="1" name="adm_videos">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-03-10.23:12:03</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-03-10.23:19:08</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="information_schema">
@@ -1104,7 +1104,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="299" parent="288" name="category">
+    <table id="299" parent="288" name="categories">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
@@ -1346,7 +1346,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <ColNames>category_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>id</RefColNames>
-      <RefTableName>category</RefTableName>
+      <RefTableName>categories</RefTableName>
     </foreign-key>
     <index id="350" parent="302" name="idx_genre_category">
       <ColNames>genre_id
@@ -1543,7 +1543,7 @@ cast_member_id</ColNames>
     <foreign-key id="390" parent="305" name="fk_vcs_category_id">
       <ColNames>category_id</ColNames>
       <RefColNames>id</RefColNames>
-      <RefTableName>category</RefTableName>
+      <RefTableName>categories</RefTableName>
     </foreign-key>
     <index id="391" parent="305" name="idx_vcs_video_category">
       <ColNames>video_id
