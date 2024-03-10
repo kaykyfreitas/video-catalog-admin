@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/delete/DefaultDeleteVideoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/delete/DeleteVideoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/delete/DeleteVideoUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/get/DefaultGetVideoByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/get/GetVideoByIdUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/get/VideoOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/get/GetVideoByIdUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/utils/CollectionUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,7 +232,7 @@
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.get" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DeleteVideoUseCaseTest">
+  <component name="RunManager" selected="Gradle.GetVideoByIdUseCaseTest">
     <configuration name="CreateVideoUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -269,30 +271,6 @@
             <option value=":application:test" />
             <option value="--tests" />
             <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.create.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeCastMembersDoesNotExists_shouldReturnDomainException&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeGenresDoesNotExists_shouldReturnDomainException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":application:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.create.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeGenresDoesNotExists_shouldReturnDomainException&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -351,6 +329,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="GetVideoByIdUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":application:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.retrieve.get.GetVideoByIdUseCaseTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="video-catalog-admin.infrastructure.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="dev.kaykyfreitas.video.catalog.admin.infrastructure.Main" />
@@ -360,11 +362,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GetVideoByIdUseCaseTest" />
         <item itemvalue="Gradle.DeleteVideoUseCaseTest" />
         <item itemvalue="Gradle.CreateVideoUseCaseTest" />
         <item itemvalue="Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoThrowsException_shouldCallClearResources" />
         <item itemvalue="Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeCastMembersDoesNotExists_shouldReturnDomainException" />
-        <item itemvalue="Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeGenresDoesNotExists_shouldReturnDomainException" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +408,7 @@
       <workItem from="1709764158831" duration="4250000" />
       <workItem from="1709956946021" duration="6551000" />
       <workItem from="1710011829002" duration="19732000" />
-      <workItem from="1710047346440" duration="2437000" />
+      <workItem from="1710047346440" duration="4559000" />
     </task>
     <servers />
   </component>
