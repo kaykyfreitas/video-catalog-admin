@@ -5,32 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/DefaultCreateVideoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/exceptions/InternalErrorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/MediaResourceGateway.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/Resource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/delete/DefaultDeleteVideoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/delete/DeleteVideoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/delete/DeleteVideoUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/Fixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/Fixture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/UseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/UseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/CreateCastMemberUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/CreateCastMemberUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/delete/DeleteCastMemberUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/delete/DeleteCastMemberUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/get/GetCastMemberByIdUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/get/GetCastMemberByIdUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/ListCastMembersUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/ListCastMembersUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/UpdateCastMemberUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/UpdateCastMemberUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/genre/create/CreateGenreUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/genre/create/CreateGenreUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/genre/retrieve/get/GetGenreByIdUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/genre/retrieve/get/GetGenreByIdUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/genre/update/UpdateGenreUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/genre/update/UpdateGenreUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/castmember/CastMemberGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/genre/GenreGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/genre/GenreGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoValidatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/CastMemberMySQLGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/CastMemberMySQLGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +132,7 @@
     "Gradle.CreateVideoUseCaseTest.givenAnInvalidRating_whenCallsCreateVideo_shouldReturnDomainException.executor": "Run",
     "Gradle.DeleteCastMemberUseCaseIT.executor": "Run",
     "Gradle.DeleteCastMemberUseCaseTest.executor": "Run",
+    "Gradle.DeleteVideoUseCaseTest.executor": "Run",
     "Gradle.GenreAPITest.executor": "Run",
     "Gradle.GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres.executor": "Run",
     "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithCategories.executor": "Run",
@@ -251,7 +230,7 @@
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.get" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CreateVideoUseCaseTest">
+  <component name="RunManager" selected="Gradle.DeleteVideoUseCaseTest">
     <configuration name="CreateVideoUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -290,30 +269,6 @@
             <option value=":application:test" />
             <option value="--tests" />
             <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.create.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeCastMembersDoesNotExists_shouldReturnDomainException&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeCategoriesDoesNotExists_shouldReturnDomainException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":application:test" />
-            <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.create.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeCategoriesDoesNotExists_shouldReturnDomainException&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -372,6 +327,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="DeleteVideoUseCaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":application:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.application.video.delete.DeleteVideoUseCaseTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="video-catalog-admin.infrastructure.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="dev.kaykyfreitas.video.catalog.admin.infrastructure.Main" />
@@ -381,11 +360,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DeleteVideoUseCaseTest" />
         <item itemvalue="Gradle.CreateVideoUseCaseTest" />
         <item itemvalue="Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoThrowsException_shouldCallClearResources" />
         <item itemvalue="Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeCastMembersDoesNotExists_shouldReturnDomainException" />
         <item itemvalue="Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeGenresDoesNotExists_shouldReturnDomainException" />
-        <item itemvalue="Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoAndSomeCategoriesDoesNotExists_shouldReturnDomainException" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +406,7 @@
       <workItem from="1709764158831" duration="4250000" />
       <workItem from="1709956946021" duration="6551000" />
       <workItem from="1710011829002" duration="19732000" />
-      <workItem from="1710047346440" duration="1802000" />
+      <workItem from="1710047346440" duration="2437000" />
     </task>
     <servers />
   </component>
