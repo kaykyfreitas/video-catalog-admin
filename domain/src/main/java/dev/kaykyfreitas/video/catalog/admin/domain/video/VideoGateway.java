@@ -8,6 +8,6 @@ public interface VideoGateway {
     Video create(Video aVideo);
     void deleteById(VideoId anId);
     Optional<Video> findById(VideoId anId);
-    Pagination<Video> findAll(VideoSearchQuery aQuery);
+    Pagination<VideoPreview> findAll(VideoSearchQuery aQuery);
     Video update(Video aVideo);
 }
