@@ -1,11 +1,11 @@
 package dev.kaykyfreitas.video.catalog.admin.application.video.retrieve.list;
 
-import dev.kaykyfreitas.video.catalog.admin.application.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.application.UseCaseTest;
 import dev.kaykyfreitas.video.catalog.admin.application.genre.retrieve.list.GenreListOutput;
+import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
-import dev.kaykyfreitas.video.catalog.admin.domain.video.Video;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.VideoGateway;
+import dev.kaykyfreitas.video.catalog.admin.domain.video.VideoPreview;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.VideoSearchQuery;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -13,6 +13,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
 import java.util.List;
+import java.util.Set;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
@@ -35,8 +36,8 @@ public class ListVideoUseCaseTest extends UseCaseTest {
     public void givenAValidQuery_whenCallsListVideos_shouldReturnVideos() {
         // given
         final var videos = List.of(
-                Fixture.video(),
-                Fixture.video()
+                new VideoPreview(Fixture.video()),
+                new VideoPreview(Fixture.video())
         );
 
         final var expectedPage = 0;
@@ -65,7 +66,10 @@ public class ListVideoUseCaseTest extends UseCaseTest {
                 expectedPerPage,
                 expectedTerms,
                 expectedSort,
-                expectedDirection
+                expectedDirection,
+                Set.of(),
+                Set.of(),
+                Set.of()
         );
 
         // when
@@ -83,7 +87,7 @@ public class ListVideoUseCaseTest extends UseCaseTest {
     @Test
     public void givenAValidQuery_whenCallsListVideosAndResultIsEmpty_shouldReturnGenres() {
         // given
-        final var videos = List.<Video>of();
+        final var videos = List.<VideoPreview>of();
 
         final var expectedPage = 0;
         final var expectedPerPage = 10;
@@ -109,7 +113,10 @@ public class ListVideoUseCaseTest extends UseCaseTest {
                 expectedPerPage,
                 expectedTerms,
                 expectedSort,
-                expectedDirection
+                expectedDirection,
+                Set.of(),
+                Set.of(),
+                Set.of()
         );
 
         // when
@@ -143,7 +150,10 @@ public class ListVideoUseCaseTest extends UseCaseTest {
                 expectedPerPage,
                 expectedTerms,
                 expectedSort,
-                expectedDirection
+                expectedDirection,
+                Set.of(),
+                Set.of(),
+                Set.of()
         );
 
         // when

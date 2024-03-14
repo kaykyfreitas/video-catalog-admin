@@ -1,5 +1,6 @@
 package dev.kaykyfreitas.video.catalog.admin.domain.video;
 
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -8,6 +9,7 @@ public class AudioVideoMediaTest {
     @Test
     public void givenValidParams_whenCallsNewAudioVideo_shouldReturnInstance() {
         // given
+        final var expectedId = IdUtils.uuid();
         final var expectedChecksum = "abc";
         final var expectedName = "Banner.png";
         final var expectedRawLocation = "images/abc";
@@ -16,6 +18,7 @@ public class AudioVideoMediaTest {
 
         // when
         final var actualVideo = AudioVideoMedia.with(
+                expectedId,
                 expectedChecksum,
                 expectedName,
                 expectedRawLocation,
@@ -25,6 +28,7 @@ public class AudioVideoMediaTest {
 
         // then
         Assertions.assertNotNull(actualVideo);
+        Assertions.assertEquals(expectedId, actualVideo.id());
         Assertions.assertEquals(expectedChecksum, actualVideo.checksum());
         Assertions.assertEquals(expectedName, actualVideo.name());
         Assertions.assertEquals(expectedRawLocation, actualVideo.rawLocation());
@@ -35,10 +39,12 @@ public class AudioVideoMediaTest {
     @Test
     public void givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue() {
         // given
+        final var expectedId = IdUtils.uuid();
         final var expectedChecksum = "abc";
         final var expectedRawLocation = "images/abc";
 
         final var firstAudioVideo = AudioVideoMedia.with(
+                expectedId,
                 expectedChecksum,
                 "Random",
                 expectedRawLocation,
@@ -47,6 +53,7 @@ public class AudioVideoMediaTest {
         );
 
         final var secondAudioVideo = AudioVideoMedia.with(
+                expectedId,
                 expectedChecksum,
                 "Simple",
                 expectedRawLocation,
@@ -63,26 +70,31 @@ public class AudioVideoMediaTest {
     public void givenInvalidParams_whenCallsWith_shouldReturnError() {
         Assertions.assertThrows(
                 NullPointerException.class,
-                () -> AudioVideoMedia.with(null, "Random", "/videos", "/videos", MediaStatus.PENDING)
+                () -> AudioVideoMedia.with(null, "1234", "Random", "/videos", "/videos", MediaStatus.PENDING)
         );
 
         Assertions.assertThrows(
                 NullPointerException.class,
-                () -> AudioVideoMedia.with("abc", null, "/videos", "/videos", MediaStatus.PENDING)
+                () -> AudioVideoMedia.with(IdUtils.uuid(), null, null, "/videos", "/videos", MediaStatus.PENDING)
         );
 
         Assertions.assertThrows(
                 NullPointerException.class,
-                () -> AudioVideoMedia.with("abc", "Random", null, "/videos", MediaStatus.PENDING)
+                () -> AudioVideoMedia.with(IdUtils.uuid(), "abc", null, "/videos", "/videos", MediaStatus.PENDING)
         );
 
         Assertions.assertThrows(
                 NullPointerException.class,
-                () -> AudioVideoMedia.with("abc", "Random", "/videos", null, MediaStatus.PENDING)
+                () -> AudioVideoMedia.with(IdUtils.uuid(), "abc", "Random", null, "/videos", MediaStatus.PENDING)
+        );
+
+        Assertions.assertThrows(
+                NullPointerException.class,
+                () -> AudioVideoMedia.with(IdUtils.uuid(), "abc", "Random", "/videos", null, MediaStatus.PENDING)
         );
         Assertions.assertThrows(
                 NullPointerException.class,
-                () -> AudioVideoMedia.with("abc", "Random", "/videos", "/videos", null)
+                () -> AudioVideoMedia.with(IdUtils.uuid(), "abc", "Random", "/videos", "/videos", null)
         );
     }
 }

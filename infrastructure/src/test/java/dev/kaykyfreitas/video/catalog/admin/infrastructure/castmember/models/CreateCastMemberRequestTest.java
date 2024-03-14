@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.models;
 
-import dev.kaykyfreitas.video.catalog.admin.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.JacksonTest;
+import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ public class CreateCastMemberRequestTest {
     @Test
     public void testUnmarshall() throws Exception {
         final var expectedName = Fixture.name();
-        final var expectedType = Fixture.CastMember.type();
+        final var expectedType = Fixture.CastMembers.type();
 
         final var json = """
                 {

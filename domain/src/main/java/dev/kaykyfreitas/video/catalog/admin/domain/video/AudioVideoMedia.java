@@ -1,6 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.domain.video;
 
 import dev.kaykyfreitas.video.catalog.admin.domain.ValueObject;
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
 
 import java.util.Objects;
 
@@ -8,6 +9,7 @@ import static java.util.Objects.requireNonNull;
 
 public class AudioVideoMedia extends ValueObject {
 
+    private final String id;
     private final String checksum;
     private final String name;
     private final String rawLocation;
@@ -15,12 +17,14 @@ public class AudioVideoMedia extends ValueObject {
     private final MediaStatus status;
 
     private AudioVideoMedia(
+            final String id,
             final String checksum,
             final String name,
             final String rawLocation,
             final String encodedLocation,
             final MediaStatus status
     ) {
+        this.id = requireNonNull(id);
         this.checksum = requireNonNull(checksum);
         this.name = requireNonNull(name);
         this.rawLocation = requireNonNull(rawLocation);
@@ -31,17 +35,38 @@ public class AudioVideoMedia extends ValueObject {
     public static AudioVideoMedia with(
             final String checksum,
             final String name,
+            final String rawLocation
+    ) {
+        return new AudioVideoMedia(
+                IdUtils.uuid(),
+                checksum,
+                name,
+                rawLocation,
+                "",
+                MediaStatus.PENDING
+        );
+    }
+
+    public static AudioVideoMedia with(
+            final String id,
+            final String checksum,
+            final String name,
             final String rawLocation,
             final String encodedLocation,
             final MediaStatus status
     ) {
         return new AudioVideoMedia(
+                id,
                 checksum,
                 name,
                 rawLocation,
                 encodedLocation,
                 status
         );
+    }
+
+    public String id() {
+        return this.id;
     }
 
     public String checksum() {

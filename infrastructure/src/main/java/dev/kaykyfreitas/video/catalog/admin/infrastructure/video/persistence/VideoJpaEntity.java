@@ -3,6 +3,7 @@ package dev.kaykyfreitas.video.catalog.admin.infrastructure.video.persistence;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
 import dev.kaykyfreitas.video.catalog.admin.domain.genre.GenreId;
+import dev.kaykyfreitas.video.catalog.admin.domain.utils.CollectionUtils;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.Rating;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.Video;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.VideoId;
@@ -39,7 +40,6 @@ public class VideoJpaEntity {
     private boolean published;
 
     @Column(name = "rating")
-    @Enumerated(EnumType.STRING)
     private Rating rating;
 
     @Column(name = "duration", precision = 2)
@@ -356,4 +356,17 @@ public class VideoJpaEntity {
     public void setCastMembers(Set<VideoCastMemberJpaEntity> castMembers) {
         this.castMembers = castMembers;
     }
+
+    public Set<CategoryId> getCategoriesId() {
+        return CollectionUtils.mapTo(getCategories(), it -> CategoryId.from(it.getId().getCategoryId()));
+    }
+
+    public Set<CastMemberId> getCastMembersId() {
+        return CollectionUtils.mapTo(getCastMembers(), it -> CastMemberId.from(it.getId().getCastMemberId()));
+    }
+
+    public Set<GenreId> getGenresId() {
+        return CollectionUtils.mapTo(getGenres(), it -> GenreId.from(it.getId().getGenreId()));
+    }
+
 }

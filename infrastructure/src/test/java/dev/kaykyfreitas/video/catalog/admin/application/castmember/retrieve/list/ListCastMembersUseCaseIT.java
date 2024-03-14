@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.list;
 
-import dev.kaykyfreitas.video.catalog.admin.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.IntegrationTest;
+import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMember;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.SearchQuery;
@@ -34,8 +34,8 @@ public class ListCastMembersUseCaseIT {
     public void givenAValidQuery_whenCallsListCastMembers_shouldReturnAll() {
         // given
         final var members = List.of(
-                CastMember.newMember(Fixture.name(), Fixture.CastMember.type()),
-                CastMember.newMember(Fixture.name(), Fixture.CastMember.type())
+                CastMember.newMember(Fixture.name(), Fixture.CastMembers.type()),
+                CastMember.newMember(Fixture.name(), Fixture.CastMembers.type())
         );
 
         this.castMemberRepository.saveAllAndFlush(members.stream().map(CastMemberJpaEntity::from).toList());

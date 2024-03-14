@@ -12,6 +12,9 @@ public class AudioVideoMediaJpaEntity {
     @Id
     private String id;
 
+    @Column(name = "checksum", nullable = false)
+    private String checksum;
+
     @Column(name = "name", nullable = false)
     private String name;
 
@@ -21,8 +24,7 @@ public class AudioVideoMediaJpaEntity {
     @Column(name = "encoded_path", nullable = false)
     private String encodedPath;
 
-    @Column(name = "status", nullable = false)
-    @Enumerated(EnumType.STRING)
+    @Column(name = "media_status", nullable = false)
     private MediaStatus status;
 
     public AudioVideoMediaJpaEntity() {
@@ -30,12 +32,14 @@ public class AudioVideoMediaJpaEntity {
 
     private AudioVideoMediaJpaEntity(
             final String id,
+            final String checksum,
             final String name,
             final String filePath,
             final String encodedPath,
             final MediaStatus status
     ) {
         this.id = id;
+        this.checksum = checksum;
         this.name = name;
         this.filePath = filePath;
         this.encodedPath = encodedPath;
@@ -44,6 +48,7 @@ public class AudioVideoMediaJpaEntity {
 
     public static AudioVideoMediaJpaEntity from(final AudioVideoMedia aMedia) {
         return new AudioVideoMediaJpaEntity(
+                aMedia.id(),
                 aMedia.checksum(),
                 aMedia.name(),
                 aMedia.rawLocation(),
@@ -55,6 +60,7 @@ public class AudioVideoMediaJpaEntity {
     public AudioVideoMedia toDomain() {
         return AudioVideoMedia.with(
                 this.getId(),
+                this.getChecksum(),
                 this.getName(),
                 this.getFilePath(),
                 this.getEncodedPath(),
@@ -69,6 +75,14 @@ public class AudioVideoMediaJpaEntity {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getChecksum() {
+        return checksum;
+    }
+
+    public void setChecksum(String checksum) {
+        this.checksum = checksum;
     }
 
     public String getName() {

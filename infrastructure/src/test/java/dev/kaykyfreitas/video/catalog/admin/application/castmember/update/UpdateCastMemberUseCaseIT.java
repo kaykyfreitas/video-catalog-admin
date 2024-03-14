@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.application.castmember.update;
 
-import dev.kaykyfreitas.video.catalog.admin.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.IntegrationTest;
+import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMember;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;
@@ -147,7 +147,7 @@ public class UpdateCastMemberUseCaseIT {
         // given
         final var expectedId = CastMemberId.from("123");
         final var expectedName = Fixture.name();
-        final var expectedType = Fixture.CastMember.type();
+        final var expectedType = Fixture.CastMembers.type();
 
         final var expectedErrorMessage = "castmember with id 123 was not found";
 

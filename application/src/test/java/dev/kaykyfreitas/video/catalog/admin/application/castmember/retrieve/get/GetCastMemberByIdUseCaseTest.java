@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.application.castmember.retrieve.get;
 
-import dev.kaykyfreitas.video.catalog.admin.application.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.application.UseCaseTest;
+import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMember;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;

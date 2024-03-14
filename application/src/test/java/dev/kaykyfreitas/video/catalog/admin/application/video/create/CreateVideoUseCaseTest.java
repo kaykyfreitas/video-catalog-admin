@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.application.video.create;
 
-import dev.kaykyfreitas.video.catalog.admin.application.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.application.UseCaseTest;
+import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryGateway;
@@ -1018,6 +1018,7 @@ public class CreateVideoUseCaseTest extends UseCaseTest {
         when(mediaResourceGateway.storeAudioVideo(any(), any())).thenAnswer(t -> {
             final var resource = t.getArgument(1, Resource.class);
             return AudioVideoMedia.with(
+                    IdUtils.uuid(),
                     IdUtils.uuid(),
                     resource.name(),
                     "/video",

@@ -3,6 +3,7 @@ package dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMember;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;
+import dev.kaykyfreitas.video.catalog.admin.domain.category.CategoryId;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.Pagination;
 import dev.kaykyfreitas.video.catalog.admin.domain.pagination.SearchQuery;
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.persistence.CastMemberJpaEntity;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.StreamSupport;
 
 @Component
 public class CastMemberMySQLGateway implements CastMemberGateway {
@@ -74,8 +76,13 @@ public class CastMemberMySQLGateway implements CastMemberGateway {
     }
 
     @Override
-    public List<CastMemberId> existsByIds(Iterable<CastMemberId> ids) {
-        throw new UnsupportedOperationException();
+    public List<CastMemberId> existsByIds(final Iterable<CastMemberId> castMemberIds) {
+        final var ids = StreamSupport.stream(castMemberIds.spliterator(), false)
+                .map(CastMemberId::getValue)
+                .toList();
+        return this.castMemberRepository.existsByIds(ids).stream()
+                .map(CastMemberId::from)
+                .toList();
     }
 
     private CastMember save(final CastMember aCastMember) {

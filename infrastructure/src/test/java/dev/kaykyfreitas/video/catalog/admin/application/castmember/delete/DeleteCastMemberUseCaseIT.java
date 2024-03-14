@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.application.castmember.delete;
 
-import dev.kaykyfreitas.video.catalog.admin.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.IntegrationTest;
+import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMember;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberGateway;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberId;
@@ -31,8 +31,8 @@ public class DeleteCastMemberUseCaseIT {
     @Test
     public void givenAValidId_whenCallsDeleteCastMember_shouldDeleteId() {
         // given
-        final var aMember = CastMember.newMember(Fixture.name(), Fixture.CastMember.type());
-        final var aMemberTwo = CastMember.newMember(Fixture.name(), Fixture.CastMember.type());
+        final var aMember = CastMember.newMember(Fixture.name(), Fixture.CastMembers.type());
+        final var aMemberTwo = CastMember.newMember(Fixture.name(), Fixture.CastMembers.type());
 
         final var expectedId = aMember.getId();
 
@@ -58,7 +58,7 @@ public class DeleteCastMemberUseCaseIT {
         // given
         this.castMemberRepository.saveAndFlush(
                 CastMemberJpaEntity.from(
-                        CastMember.newMember(Fixture.name(), Fixture.CastMember.type())
+                        CastMember.newMember(Fixture.name(), Fixture.CastMembers.type())
                 )
         );
         Assertions.assertEquals(1, castMemberRepository.count());
@@ -78,12 +78,12 @@ public class DeleteCastMemberUseCaseIT {
         // given
         this.castMemberRepository.saveAndFlush(
                 CastMemberJpaEntity.from(
-                        CastMember.newMember(Fixture.name(), Fixture.CastMember.type())
+                        CastMember.newMember(Fixture.name(), Fixture.CastMembers.type())
                 )
         );
         Assertions.assertEquals(1, castMemberRepository.count());
 
-        final var aMember = CastMember.newMember(Fixture.name(), Fixture.CastMember.type());
+        final var aMember = CastMember.newMember(Fixture.name(), Fixture.CastMembers.type());
 
         final var expectedId = aMember.getId();
 

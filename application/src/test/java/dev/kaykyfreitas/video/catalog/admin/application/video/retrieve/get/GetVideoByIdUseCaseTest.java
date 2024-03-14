@@ -1,7 +1,7 @@
 package dev.kaykyfreitas.video.catalog.admin.application.video.retrieve.get;
 
-import dev.kaykyfreitas.video.catalog.admin.application.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.application.UseCaseTest;
+import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotFoundException;
 import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.*;
@@ -124,6 +124,7 @@ public class GetVideoByIdUseCaseTest extends UseCaseTest {
     public AudioVideoMedia audioVideo(final Type type) {
         final var checksum = IdUtils.uuid();
         return AudioVideoMedia.with(
+                IdUtils.uuid(),
                 checksum,
                 type.name().toLowerCase(),
                 "/videos/" + checksum,

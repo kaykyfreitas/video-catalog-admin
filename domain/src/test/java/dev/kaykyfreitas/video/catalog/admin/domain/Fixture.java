@@ -1,19 +1,16 @@
-package dev.kaykyfreitas.video.catalog.admin.application;
+package dev.kaykyfreitas.video.catalog.admin.domain;
 
 import com.github.javafaker.Faker;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMember;
 import dev.kaykyfreitas.video.catalog.admin.domain.castmember.CastMemberType;
 import dev.kaykyfreitas.video.catalog.admin.domain.category.Category;
 import dev.kaykyfreitas.video.catalog.admin.domain.genre.Genre;
-import dev.kaykyfreitas.video.catalog.admin.domain.genre.GenreId;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.Rating;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.Resource;
 import dev.kaykyfreitas.video.catalog.admin.domain.video.Video;
 import io.vavr.API;
-import io.vavr.collection.List;
 
 import java.time.Year;
-import java.util.Arrays;
 import java.util.Set;
 
 import static io.vavr.API.*;
@@ -79,18 +76,33 @@ public final class Fixture {
     }
 
     public static final class Genres {
-        private static final Genre TECH = Genre.newGenre("Technology", true);
+        private static final Genre TECH =
+                Genre.newGenre("Technology", true);
+
+        private static final Genre BUSINESS =
+                Genre.newGenre("Business", true);
 
         public static Genre tech() {
             return Genre.with(TECH);
         }
+
+        public static Genre business() {
+            return Genre.with(BUSINESS);
+        }
     }
 
     public static final class Categories {
-        private static final Category AULAS = Category.newCategory("Aulas", "Some description", true);
+        private static final Category AULAS =
+                Category.newCategory("Aulas", "Some description", true);
 
+        private static final Category LIVES =
+                Category.newCategory("Lives", "Some description", true);
         public static Category aulas() {
             return AULAS.clone();
+        }
+
+        public static final Category lives() {
+            return LIVES.clone();
         }
     }
 
@@ -120,7 +132,7 @@ public final class Fixture {
 
         public static Resource resource(final Resource.Type type) {
             final String contentType = Match(type).of(
-                    Case($(List(Resource.Type.VIDEO, Resource.Type.TRAILER)::contains), "video/mp4"),
+                    Case($(API.List(Resource.Type.VIDEO, Resource.Type.TRAILER)::contains), "video/mp4"),
                     Case($(), "image/jpg")
             );
 

@@ -8,13 +8,16 @@ import dev.kaykyfreitas.video.catalog.admin.infrastructure.video.persistence.Vid
 import dev.kaykyfreitas.video.catalog.admin.infrastructure.video.persistence.VideoRepository;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Objects;
 import java.util.Optional;
-import java.util.Set;
-import java.util.stream.Collectors;
 
+import static dev.kaykyfreitas.video.catalog.admin.domain.utils.CollectionUtils.mapTo;
+import static dev.kaykyfreitas.video.catalog.admin.domain.utils.CollectionUtils.nullIfEmpty;
+
+@Component
 public class DefaultVideoGateway implements VideoGateway {
 
     private final VideoRepository videoRepository;
@@ -53,10 +56,10 @@ public class DefaultVideoGateway implements VideoGateway {
         );
 
         final var actualPage = this.videoRepository.findAll(
-                SqlUtils.like(aQuery.terms()),
-                toString(aQuery.castMembers()),
-                toString(aQuery.categories()),
-                toString(aQuery.genres()),
+                SqlUtils.like(SqlUtils.upper(aQuery.terms())),
+                nullIfEmpty(mapTo(aQuery.castMembers(), Identifier::getValue)),
+                nullIfEmpty(mapTo(aQuery.categories(), Identifier::getValue)),
+                nullIfEmpty(mapTo(aQuery.genres(), Identifier::getValue)),
                 page
         );
 
@@ -77,13 +80,6 @@ public class DefaultVideoGateway implements VideoGateway {
     private Video save(final Video aVideo) {
         return this.videoRepository.save(VideoJpaEntity.from(aVideo))
                 .toAggregate();
-    }
-
-    private Set<String> toString(final Set<? extends Identifier> ids) {
-        if (ids == null || ids.isEmpty()) return null;
-        return ids.stream()
-                .map(Identifier::getValue)
-                .collect(Collectors.toSet());
     }
 
 }
