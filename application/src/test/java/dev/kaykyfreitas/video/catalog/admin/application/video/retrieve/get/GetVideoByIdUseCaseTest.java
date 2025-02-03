@@ -3,9 +3,10 @@ package dev.kaykyfreitas.video.catalog.admin.application.video.retrieve.get;
 import dev.kaykyfreitas.video.catalog.admin.application.UseCaseTest;
 import dev.kaykyfreitas.video.catalog.admin.domain.Fixture;
 import dev.kaykyfreitas.video.catalog.admin.domain.exceptions.NotFoundException;
-import dev.kaykyfreitas.video.catalog.admin.domain.utils.IdUtils;
-import dev.kaykyfreitas.video.catalog.admin.domain.video.*;
-import dev.kaykyfreitas.video.catalog.admin.domain.video.Resource.Type;
+import dev.kaykyfreitas.video.catalog.admin.domain.video.Video;
+import dev.kaykyfreitas.video.catalog.admin.domain.video.VideoGateway;
+import dev.kaykyfreitas.video.catalog.admin.domain.video.VideoId;
+import dev.kaykyfreitas.video.catalog.admin.domain.video.VideoMediaType;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -16,6 +17,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
+import static dev.kaykyfreitas.video.catalog.admin.domain.Fixture.Videos.audioVideo;
+import static dev.kaykyfreitas.video.catalog.admin.domain.Fixture.Videos.image;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
@@ -48,11 +51,11 @@ public class GetVideoByIdUseCaseTest extends UseCaseTest {
                 Fixture.CastMembers.wesley().getId(),
                 Fixture.CastMembers.gabriel().getId()
         );
-        final var expectedVideo = audioVideo(Type.VIDEO);
-        final var expectedTrailer = audioVideo(Type.TRAILER);
-        final var expectedBanner = image(Type.BANNER);
-        final var expectedThumb = image(Type.THUMBNAIL);
-        final var expectedThumbHalf = image(Type.THUMBNAIL_HALF);
+        final var expectedVideo = audioVideo(VideoMediaType.VIDEO);
+        final var expectedTrailer = audioVideo(VideoMediaType.TRAILER);
+        final var expectedBanner = image(VideoMediaType.BANNER);
+        final var expectedThumb = image(VideoMediaType.THUMBNAIL);
+        final var expectedThumbHalf = image(VideoMediaType.THUMBNAIL_HALF);
 
         final var aVideo = Video.newVideo(
                         expectedTitle,
@@ -119,26 +122,5 @@ public class GetVideoByIdUseCaseTest extends UseCaseTest {
 
         // then
         Assertions.assertEquals(expectedErrorMessage, actualError.getMessage());
-    }
-
-    public AudioVideoMedia audioVideo(final Type type) {
-        final var checksum = IdUtils.uuid();
-        return AudioVideoMedia.with(
-                IdUtils.uuid(),
-                checksum,
-                type.name().toLowerCase(),
-                "/videos/" + checksum,
-                "",
-                MediaStatus.PENDING
-        );
-    }
-
-    public ImageMedia image(final Type type) {
-        final var checksum = IdUtils.uuid();
-        return ImageMedia.with(
-                checksum,
-                type.name().toLowerCase(),
-                "/images/" + checksum
-        );
     }
 }

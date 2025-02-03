@@ -5,57 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57c48f34-e661-4445-bd2f-f7aa460d1ebb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/RatingConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/DefaultVideoGatewayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoMediaType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/configuration/GoogleCloudConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/configuration/StorageConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/configuration/properties/google/GoogleCloudProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/configuration/properties/google/GoogleStorageProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/configuration/properties/storage/StorageProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/services/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/services/impl/GCStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/services/local/InMemoryStorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/DefaultMediaResourceGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/services/impl/GCStorageServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/services/local/InMemoryStorageServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/DefaultMediaResourceGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/bb94186c-c502-4b98-bb9c-a46a3c2417f0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bb94186c-c502-4b98-bb9c-a46a3c2417f0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/list/VideoListOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/list/VideoListOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/Fixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/Fixture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/CreateCastMemberUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/CreateCastMemberUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/delete/DeleteCastMemberUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/delete/DeleteCastMemberUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/get/GetCastMemberByIdUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/get/GetCastMemberByIdUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/ListCastMembersUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/ListCastMembersUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/UpdateCastMemberUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/UpdateCastMemberUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/DefaultCreateVideoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/DefaultCreateVideoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/update/DefaultUpdateVideoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/update/DefaultUpdateVideoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/update/UpdateVideoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/update/UpdateVideoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/CreateVideoUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/get/GetVideoByIdUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/get/GetVideoByIdUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/list/ListVideoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/retrieve/list/ListVideoUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/update/UpdateVideoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/video/update/UpdateVideoUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/utils/CollectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/utils/CollectionUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/AudioVideoMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/AudioVideoMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/ImageMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/ImageMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoPreview.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoPreview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/AudioVideoMediaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/AudioVideoMediaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/video/VideoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/MediaResourceGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/MediaResourceGateway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/video/Resource.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/dev/kaykyfreitas/video/catalog/admin/domain/resource/Resource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/Fixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/dev/kaykyfreitas/video/catalog/admin/domain/Fixture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/CastMemberMySQLGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/CastMemberMySQLGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/persistence/CastMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/persistence/CastMemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreJpaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/persistence/GenreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/utils/SqlUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/utils/SqlUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/DefaultVideoGateway.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/DefaultVideoGateway.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/AudioVideoMediaJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/AudioVideoMediaJpaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/ImageMediaJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/ImageMediaJpaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoJpaEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoJpaEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/persistence/VideoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/Fixture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLCleanUpExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/MySQLCleanUpExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/CreateCastMemberUseCaseIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/create/CreateCastMemberUseCaseIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/delete/DeleteCastMemberUseCaseIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/delete/DeleteCastMemberUseCaseIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/get/GetCastMemberByIdUseCaseIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/get/GetCastMemberByIdUseCaseIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/ListCastMembersUseCaseIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/retrieve/list/ListCastMembersUseCaseIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/UpdateCastMemberUseCaseIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/application/castmember/update/UpdateCastMemberUseCaseIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/castmember/CastMemberE2ETest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/e2e/castmember/CastMemberE2ETest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/CastMemberAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/api/CastMemberAPITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/CastMemberMySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/CastMemberMySQLGatewayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberListResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberListResponseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberResponseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CastMemberResponseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CreateCastMemberRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/CreateCastMemberRequestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/UpdateCastMemberRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/castmember/models/UpdateCastMemberRequestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGatewayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/genre/GenreMySQLGatewayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,19 +93,35 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Record" />
-        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kaykyfreitas&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:kaykyfreitas/video-catalog-admin.git&quot;,
+    &quot;accountId&quot;: &quot;af3ba47a-6a8d-4f75-8bed-3d96cbd68ed0&quot;
+  }
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -177,6 +172,8 @@
     "Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideoThrowsException_shouldCallClearResources.executor": "Run",
     "Gradle.CreateVideoUseCaseTest.givenAValidCommand_whenCallsCreateVideo_shouldReturnVideoId.executor": "Run",
     "Gradle.CreateVideoUseCaseTest.givenAnInvalidRating_whenCallsCreateVideo_shouldReturnDomainException.executor": "Run",
+    "Gradle.DefaultMediaResourceGatewayTest.executor": "Run",
+    "Gradle.DefaultMediaResourceGatewayTest.givenValidResource_whenCallsStorageAudioVideo_shouldStoreIt.executor": "Debug",
     "Gradle.DefaultVideoGatewayTest.executor": "Run",
     "Gradle.DefaultVideoGatewayTest.givenAInvalidVideoId_whenCallsFindById_shouldEmpty.executor": "Run",
     "Gradle.DefaultVideoGatewayTest.givenAValidPaging_whenCallsFindAll_shouldReturnPaged.executor": "Run",
@@ -187,6 +184,11 @@
     "Gradle.DeleteCastMemberUseCaseIT.executor": "Run",
     "Gradle.DeleteCastMemberUseCaseTest.executor": "Run",
     "Gradle.DeleteVideoUseCaseTest.executor": "Run",
+    "Gradle.GCStorageServiceTest.executor": "Debug",
+    "Gradle.GCStorageServiceTest.givenAValidResource_whenCallsStore_shouldPersistIt.executor": "Run",
+    "Gradle.GCStorageServiceTest.givenValidNames_whenCallsDelete_shouldDeleteAll.executor": "Run",
+    "Gradle.GCStorageServiceTest.givenValidPrefix_whenCallsList_shouldRetrieveAll.executor": "Run",
+    "Gradle.GCStorageServiceTest.givenValidResource_whenCallsGet_shouldRetrieveIt.executor": "Run",
     "Gradle.GenreAPITest.executor": "Run",
     "Gradle.GenreAPITest.givenValidParams_whenCallsListGenres_shouldReturnGenres.executor": "Run",
     "Gradle.GenreE2ETest.asACatalogAdminIShouldBeAbleToCreateANewGenreWithCategories.executor": "Run",
@@ -213,6 +215,8 @@
     "Gradle.GetVideoByIdUseCaseTest.executor": "Run",
     "Gradle.ImageMediaTest.executor": "Run",
     "Gradle.ImageMediaTest.givenTwoImagesWithSameCheckSumAndLocation_whenCallsEquals_shouldReturnTrue.executor": "Run",
+    "Gradle.InMemoryStorageServiceTest.executor": "Run",
+    "Gradle.InMemoryStorageServiceTest.givenAValidPrefix_whenCallsList_shouldRetrieveAll.executor": "Run",
     "Gradle.ListCastMembersUseCaseIT.executor": "Run",
     "Gradle.ListCastMembersUseCaseTest.executor": "Run",
     "Gradle.ListGenreUseCaseIT.executor": "Run",
@@ -280,6 +284,8 @@
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="dev.kaykyfreitas.video.catalog.admin.infrastructure.video" />
+      <recent name="dev.kaykyfreitas.video.catalog.admin.infrastructure.services.impl" />
+      <recent name="dev.kaykyfreitas.video.catalog.admin.infrastructure.services.local" />
       <recent name="dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -290,8 +296,8 @@
       <recent name="dev.kaykyfreitas.video.catalog.admin.application.castmember.delete" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.video-catalog-admin [test]">
-    <configuration name="CastMemberMySQLGatewayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.DefaultMediaResourceGatewayTest">
+    <configuration name="DefaultMediaResourceGatewayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -304,7 +310,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.castmember.CastMemberMySQLGatewayTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.video.DefaultMediaResourceGatewayTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -315,7 +321,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DefaultVideoGatewayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DefaultMediaResourceGatewayTest.givenValidResource_whenCallsStorageAudioVideo_shouldStoreIt" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -328,7 +334,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.video.DefaultVideoGatewayTest&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.video.DefaultMediaResourceGatewayTest.givenValidResource_whenCallsStorageAudioVideo_shouldStoreIt&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -339,7 +345,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GenreMySQLGatewayTest.givenTwoGenresAndOnePersisted_whenCallsExistsByIds_shouldReturnPersistedID" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GCStorageServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -352,7 +358,7 @@
           <list>
             <option value=":infrastructure:test" />
             <option value="--tests" />
-            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.genre.GenreMySQLGatewayTest.givenTwoGenresAndOnePersisted_whenCallsExistsByIds_shouldReturnPersistedID&quot;" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.services.impl.GCStorageServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -363,72 +369,88 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="video-catalog-admin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GCStorageServiceTest.givenValidNames_whenCallsDelete_shouldDeleteAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.services.impl.GCStorageServiceTest.givenValidNames_whenCallsDelete_shouldDeleteAll&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="video-catalog-admin [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GCStorageServiceTest.givenValidPrefix_whenCallsList_shouldRetrieveAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":infrastructure:test" />
+            <option value="--tests" />
+            <option value="&quot;dev.kaykyfreitas.video.catalog.admin.infrastructure.services.impl.GCStorageServiceTest.givenValidPrefix_whenCallsList_shouldRetrieveAll&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <envs>
+        <env name="GOOGLE_CLOUD_CREDENTIALS" value="ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiY29kZWZsaXgtNDQ5MTAxIiwKICAicHJpdmF0ZV9rZXlfaWQiOiAiNWQwZmI2OTk3MTQ2YzU4YTAxNWRkYzdmZDNjYjA1ZWYzZGJkZGY4ZCIsCiAgInByaXZhdGVfa2V5IjogIi0tLS0tQkVHSU4gUFJJVkFURSBLRVktLS0tLVxuTUlJRXZRSUJBREFOQmdrcWhraUc5dzBCQVFFRkFBU0NCS2N3Z2dTakFnRUFBb0lCQVFDMW5rUHQ2WmhpRHljUVxuTU1VQ00yRmpCN0haNnI2RXBzendPejJmUnl0alEva3ZDNnUyWlBOajltLzdnZFh2TmE1VURPS2hlTGVoTDBxelxuRlN1bElKYy90ajRiS3E4MG9IV056Q2NFYW5jRHZrZWFjTWFnSEM5VDhhMm9xYW9pTE13MTZSQnV5bE5iUTV0TVxuVFF5dGRCc3RVbWVYMFVOaHRtbmFUWi84ekhxa1J2aWIvVXJjdlZWa05CcXhtVXJKc2c0VnAxMjF1L29ONVFhMlxueXNCeHpxM1lEY0JXQTRTQTVFd0VSV2ZVckpTd2tvUTdQeXU2S3hEbk1HZ2o4Mm05M0hqKzhSOUlnbGdFZ3NKWlxuSlRZYi9LTlR0S092ay9RUCtzc09YMUtUc1VyVlAwZFdlc2NQUDBrQXJCazhjTW1vVHdPeFhubHo3K2dGYkZMVlxueVhaay9wbHZBZ01CQUFFQ2dnRUFBejRLRkd0Qkx5NzZFWTN0Vm5hNFhGNDh6SmttUVpRQXdLRXVIblBVMEhiY1xuTWZ6UldmWS9haDl5TEZsTENuUTQ0b05BWUlXWk1hVjRmZTM0MDMvYmMyVzdnaHltK0JlTlFiVE5WWVRaRHhZTVxualROS09IMklVc1ZUeGxrUkVuOGVQakFrL1BWYnU1dGZZR05Yd0pqOEN6a1haRngyQ1g2S01UMkZoNnZXM0t2blxuN2xyK2FhYVN2SjUzdjQ2UmV0WTY0eTEvQ3EvMkZ3eEMwN2RwdEpTTE9VZDhSeFp1RTVmNzkwRWxibm9mb0tWbVxuOTFvVkVNV3BQU1RjSXAwSWFqYTZKeGo0V0F5YnByTEZWMmJ2QkZhT2dVYWhGd0lqRTM3aStzZmR3VmhXQzFwY1xuSnJMVnJ6Qm53QVJEVHVWcDVpVE95V2tPcGFSdkhQVXZhWFgxOXgwNHdRS0JnUUR6N2k5RDl4TmZmZjB6NWdjM1xuVzFVc0taVUFjbHRteTNaYUcrZFkrOUxtMnV1dWlvU3p2ak9TWHVWOWNsZ1NCa29CSHE4VS80WWYyS2JqUjNuWFxuS3JYYWZxMVZGQ2ZNT09aWGNEUmtqQlI0cWlKeFlhRWx4RTUzbTlGcW5WMzZLbjlyMTVvajJ0WHhmOEdlOHJUblxuajFjNm1SV1M2amNPSHlCTllsM0xYWnJPdndLQmdRQyttc2tMa2QyRGJFdlRpUHd3QVhaUzlFMWtxWTdLbldDeVxudklnU0lRaUN3c2EwNVpqUk1XUTlpRC9SOWVhbDhXTktmc3VERVpHdlBWYnFFRXRtR284Z2dqVUlqeXJwbUZHVVxuQWRMNE94cStuREhYekpZRHc1WG5ibTVIK0g1VmpIZFN1dzB3aStuSzhJQzVmTWFtUGdLRnA5cWNiZXFTcytncVxuZ1krdGExZVJVUUtCZ0RES3d1K1FXM0t0YTlsV3VMak03eE4vV2N1V0ZFeFNoR0R2MWUzSnFWeitDMGlGY3BmVlxuZ3RGVFpBb2N0aHNjNE82cWFaRUVyNXB0SnF5dG5tUjRxWm1EM3ozMll5T0plaUdoVXdtTnI0YVhXWDVlYmZKMFxuK3RFWC9PS2JpYkhCa0cxTTJnc3orYmx0dVpnR3FrTHJQQ0ovZm40OWxUZWc2RUF5WGRxUTVhZFhBb0dBTFlaQVxud0krdFRhZC9FTjRtQmIxRHFwcUpKYUxONVJ6anJLMFUvdWQrNWVScG0yay9MNi9SVmxVRmtUdGZSSUU4Q3QzdlxuODdVdGk2Smw4Ty9GWW5TemZMczh1WGVnY3p5Yk4zT2NGUWZnNG1maUM3M2trcStUVFR4MkFLQ2NaQWh4czRQVFxucWFXeFNIUmErbktQNjhMaHpWU0RCVnZIYkJTbVBnakY3VkMzRUpFQ2dZRUFqdm1zS1ByMWJLVXdKTTdWaTNGSlxuK1BpejIrVG9WamZNTE1TajFTT3NIMG0ydFowa3JGcEVsYXNWL2d2YldnSEEyNlBrZmVaRnhxLzJLQ3pWcEt5VFxuaVNqeG1UZmtWWDlvOHR6L3Izd3JWQzRqeVFOWWFrY2dhR1FhU2UwQzI5KzNpbmh6ZWhkZ3JnRVA4RWdIZHVwTVxudTU0THFtaG10RVpEWUxrY3VwWUZRSkE9XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLAogICJjbGllbnRfZW1haWwiOiAibXMtdmlkZW8tY2F0YWxvZy1hZG1pbkBjb2RlZmxpeC00NDkxMDEuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTExNTYwNjk2MTMxMzA3MTQyMTM4IiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9tcy12aWRlby1jYXRhbG9nLWFkbWluJTQwY29kZWZsaXgtNDQ5MTAxLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwKICAidW5pdmVyc2VfZG9tYWluIjogImdvb2dsZWFwaXMuY29tIgp9Cg==" />
+        <env name="GOOGLE_CLOUD_PROJECT_ID" value="codeflix-449101 " />
+      </envs>
       <module name="video-catalog-admin.infrastructure.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="dev.kaykyfreitas.video.catalog.admin.infrastructure.Main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.DefaultMediaResourceGatewayTest" />
+      <item itemvalue="Gradle.DefaultMediaResourceGatewayTest.givenValidResource_whenCallsStorageAudioVideo_shouldStoreIt" />
+      <item itemvalue="Gradle.GCStorageServiceTest" />
+      <item itemvalue="Gradle.GCStorageServiceTest.givenValidNames_whenCallsDelete_shouldDeleteAll" />
+      <item itemvalue="Gradle.GCStorageServiceTest.givenValidPrefix_whenCallsList_shouldRetrieveAll" />
+      <item itemvalue="Spring Boot.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.video-catalog-admin [test]" />
-        <item itemvalue="Gradle.video-catalog-admin [build]" />
-        <item itemvalue="Gradle.CastMemberMySQLGatewayTest" />
-        <item itemvalue="Gradle.GenreMySQLGatewayTest.givenTwoGenresAndOnePersisted_whenCallsExistsByIds_shouldReturnPersistedID" />
-        <item itemvalue="Gradle.DefaultVideoGatewayTest" />
+        <item itemvalue="Gradle.DefaultMediaResourceGatewayTest" />
+        <item itemvalue="Gradle.DefaultMediaResourceGatewayTest.givenValidResource_whenCallsStorageAudioVideo_shouldStoreIt" />
+        <item itemvalue="Gradle.GCStorageServiceTest" />
+        <item itemvalue="Gradle.GCStorageServiceTest.givenValidNames_whenCallsDelete_shouldDeleteAll" />
+        <item itemvalue="Gradle.GCStorageServiceTest.givenValidPrefix_whenCallsList_shouldRetrieveAll" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-25a4bffe" />
-        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-86fc8109" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -466,6 +488,8 @@
       <workItem from="1710289030654" duration="12000" />
       <workItem from="1710361209410" duration="5846000" />
       <workItem from="1710367484804" duration="1683000" />
+      <workItem from="1738425092139" duration="1747000" />
+      <workItem from="1738538486954" duration="10312000" />
     </task>
     <servers />
   </component>
@@ -511,19 +535,14 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/DefaultCreateVideoUseCase.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/application/src/main/java/dev/kaykyfreitas/video/catalog/admin/application/video/create/DefaultCreateVideoUseCase.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/DefaultVideoGateway.java</url>
           <line>51</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/infrastructure/src/main/java/dev/kaykyfreitas/video/catalog/admin/infrastructure/video/DefaultMediaResourceGateway.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

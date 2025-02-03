@@ -33,6 +33,11 @@ dependencies {
     implementation(project(":application"))
 
     // External
+
+    implementation('com.google.cloud:google-cloud-storage:2.15.0')
+    implementation('com.google.guava:guava:31.1-jre')
+
+
     implementation('io.vavr:vavr:0.10.4')
 
     implementation('mysql:mysql-connector-java')

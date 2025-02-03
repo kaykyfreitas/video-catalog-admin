@@ -1,6 +1,6 @@
 package dev.kaykyfreitas.video.catalog.admin.application.video.update;
 
-import dev.kaykyfreitas.video.catalog.admin.domain.video.Resource;
+import dev.kaykyfreitas.video.catalog.admin.domain.resource.Resource;
 
 import java.util.Optional;
 import java.util.Set;
